@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5231626d-0b86-42b1-94c1-d46397d256f3" name="Default Changelist" comment="提交，高效开发，第一条">
+      <change afterPath="$PROJECT_DIR$/src/test/demo/Demo02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/demo/Demo03_01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/demo/Demo03_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/demo/client/Demo03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/demo/interfaces/FatherDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/demo/interfaces/FatherDemo02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/demo/interfaces/FatherDemo03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/demo/note01/Demo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/demo/note01/client/Demo02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/effect.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1WHAM24ntSF89wbZCbBQXnUdQ2T" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\笔记\reading notes\reading-notes\doc" />
+      <recent name="E:\笔记\reading notes\reading-notes\src" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5231626d-0b86-42b1-94c1-d46397d256f3" name="Default Changelist" comment="" />
+      <created>1578796094941</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578796094941</updated>
+      <workItem from="1578796098556" duration="561000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交，高效开发，第一条" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交，高效开发，第一条" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="0" key="CommitChangelistDialog2" timestamp="1578796822739">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="223" y="0" key="CommitChangelistDialog2/0.0.1463.874@0.0.1463.874" timestamp="1578796822739" />
+    <state x="224" y="98" key="Vcs.Push.Dialog.v2" timestamp="1578796838826">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="224" y="98" key="Vcs.Push.Dialog.v2/0.0.1463.874@0.0.1463.874" timestamp="1578796838826" />
+  </component>
+</project>
