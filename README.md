@@ -5,6 +5,10 @@
 
 ## Effective java
 - [1.静态工厂代替构造函数](https://github.com/wangwangla/reading-notes/blob/master/effective%20java/doc/1.%E4%BD%BF%E7%94%A8%E9%9D%99%E6%80%81%E5%B7%A5%E5%8E%82%E6%9B%BF%E4%BB%A3%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0.md)
+- [2.构造函数参数过多使用bilder进行](https://github.com/wangwangla/reading-notes/blob/master/effective%20java/doc/2.%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E8%BF%87%E5%A4%9A%E4%BD%BF%E7%94%A8bilder%E8%BF%9B%E8%A1%8C.md)
+- [3.私有构造函数和枚举实现单例](https://github.com/wangwangla/reading-notes/blob/master/effective%20java/doc/3.%E7%A7%81%E6%9C%89%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E6%9E%9A%E4%B8%BE%E5%AE%9E%E7%8E%B0%E5%8D%95%E4%BE%8B.md)
+- [4.使用私有构造方法执行非实例化](https://github.com/wangwangla/reading-notes/blob/master/effective%20java/doc/4.%E4%BD%BF%E7%94%A8%E7%A7%81%E6%9C%89%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E6%89%A7%E8%A1%8C%E9%9D%9E%E5%AE%9E%E4%BE%8B%E5%8C%96.md)
+- [5.使用依赖注入实现硬编码](https://github.com/wangwangla/reading-notes/blob/master/effective%20java/doc/5.%E4%BD%BF%E7%94%A8%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E5%8F%96%E4%BB%A3%E7%A1%AC%E9%93%BE%E6%8E%A5%E8%B5%84%E6%BA%90.md)
 
 ## 游戏编程算法
 - [第一章 游戏概述](https://github.com/wangwangla/reading-notes/blob/master/%E6%B8%B8%E6%88%8F%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/1.%E7%AC%AC%E4%B8%80%E7%AB%A0.md)
