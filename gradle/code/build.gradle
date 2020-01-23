@@ -1,0 +1,83 @@
+// task hello{
+//     doLast{
+//         println "xxx";
+//     }
+// }
+
+//执行不了
+// task hello <<{
+//     println "xxx"
+// }
+
+// task upper{
+//     doLast{
+//         String some = "Test";  
+//         println "Origin:"+some;
+//         println "Upper"+some.toUpperCase();
+//     }
+// }
+
+// task xunhuan{
+//     4.times{
+//         println "$it"
+//     }
+// }
+
+
+// task hello{
+//     println "ccc"
+// }
+
+// task dep(dependsOn : hello){
+//     println "I am test"
+// }
+
+//依赖不一定存在，才可以进行依赖
+//有疑问  为什么这样做不可以
+// task hello{
+//     println "hello"
+// }
+// task depLazy(dependsOn : hello){
+//     println "lazy"
+// }
+
+
+// 动态任务
+// 4.times{
+//     task ""
+// }
+
+// task xun{
+//     4.times{
+//         println "$it"
+//     }
+// }
+
+// task xun{
+//     4.times{ counter->
+//         println "$counter"
+//     }
+// }
+
+//这个结果很惊喜
+// task xun{
+//     4.times{ counter ->
+//         println "$it"
+//     }
+//}
+// task ':xun'
+// task ':xun'
+// task ':xun'
+// task ':xun'
+
+
+task t1{
+    println "t1 -----------";
+}
+task test{
+    println "t2 -----------";
+}
+task demo{
+    println "t3 -----------";
+}
+//t1.dependsOn t2
