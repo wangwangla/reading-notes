@@ -71,13 +71,38 @@
 // task ':xun'
 
 
-task t1{
-    println "t1 -----------";
-}
-task test{
-    println "t2 -----------";
-}
-task demo{
-    println "t3 -----------";
-}
+//task t1{
+//    println "t1 -----------";
+// }
+// task test{
+//     println "t2 -----------";
+// }
+// task demo{
+//     println "t3 -----------";
+// }
 //t1.dependsOn t2
+
+// task compile {
+//     println 'compiling source'
+// }
+
+// task compileTest(dependsOn: compile) {
+//     println 'compiling unit tests'
+// }
+
+// task test(dependsOn: [compile, compileTest]) {
+//     println 'running unit tests'
+// }
+
+// task dist(dependsOn: [compile, test]) {
+//     println 'building the distribution'
+// }
+//不是很明白这个东西
+// PS E:\reading-notes\gradle\code> gradle dist -x test
+
+// > Configure project :
+// compiling source
+// compiling unit tests
+// running unit tests
+// building the distribution
+
