@@ -106,3 +106,9 @@
 // running unit tests
 // building the distribution
 
+//应用插件
+apply from:'per.gradle'
+
+task per {
+    println "$versionname $versiontest"
+}

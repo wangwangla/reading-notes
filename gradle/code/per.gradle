@@ -1,0 +1,4 @@
+ext{
+    versionname = 'test'
+    versiontest = '1.0'
+}
