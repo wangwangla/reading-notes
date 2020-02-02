@@ -1,19 +1,19 @@
+//java插件   开发java项目，所以引入java插件
 apply plugin: 'java'
-apply plugin: 'eclipse'
-
+///源码版本     
 sourceCompatibility = 1.8
+//代码版本
 version = '1.0'
 jar {
     manifest {
         attributes 'Implementation-Title': 'Gradle Quickstart',
-                   'Implementation-Version': 1.0
+                   'Implementation-Version': version
     }
 }
 
 repositories {
     mavenCentral()
-
-        maven { url 'http://repo1.maven.org/maven2' }
+    maven { url 'http://repo1.maven.org/maven2' } + 
 }
 
 dependencies {

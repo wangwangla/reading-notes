@@ -25,3 +25,10 @@
 - [9.清屏操作](https://github.com/wangwangla/reading-notes/blob/master/word%20stacks%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/9.%E6%B8%85%E5%B1%8F%E6%93%8D%E4%BD%9C.md)
 - [10.返回键](https://github.com/wangwangla/reading-notes/blob/master/word%20stacks%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/10.%E8%BF%94%E5%9B%9E%E9%94%AE.md)
 -  [11.Baseen](https://github.com/wangwangla/reading-notes/blob/master/word%20stacks%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/11.BaseScreen.md)
+
+
+
+idea激活方法
+server
+
+http://jetbrains-license-server
