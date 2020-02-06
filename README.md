@@ -32,3 +32,14 @@ idea激活方法
 server
 
 http://jetbrains-license-server
+
+
+## 需要做什么
+
+- 每天算法数10页
+- 游戏编程10页
+- 源码分析1个
+- 重构10页
+- effect java一个
+- gradle for android ten page
+
