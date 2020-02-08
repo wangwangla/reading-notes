@@ -1,0 +1,157 @@
+//应用程序，所有需要加入这个
+apply plugin: "com.android.application"
+android {
+    //compileSdk:Version 是编译所依赖的 Android SDK 的版本，这里是 API Level; 
+    //buildToolsVersion 是构建该 均1droid 工程所用构建工具的版
+    buildToolsVersion "28.0.3"
+    compileSdkVersion 28
+    //设置源码相关信息，修改源码的目录
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    
+    android{
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+    }
+
+    //packagingOptions {
+    //    exclude 'META-INF/robovm/ios/robovm.xml'
+    //}
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+    defaultConfig {
+        // 这个可以写，也可以不写，如何不写就为null，它会自己去androidmainfest.xml文件中找。
+        applicationId "com.kangwang.word"
+        minSdkVersion 14
+        //它会自己去androidmainfest.xml文件中找。
+        targetSdkVersion 28
+        //测试版本  用域版本升级  它会自己去androidmainfest.xml文件中找。
+        versionCode 1
+        //对外的版本
+        versionName "1.0"
+        // proguardFiles混淆文件
+    }
+
+
+
+
+    signingConfigs {
+
+    }
+    buildTypes {
+        // release、 debug
+        release {
+            // 是不是使用混淆
+            minifyEnabled false
+            // 使用混淆的时候，混淆文件的位置  
+            // android-sdk/tools/proguard使用默认混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+task copyAndroidNatives {
+    doFirst {
+        file("libs/armeabi/").mkdirs()
+        file("libs/armeabi-v7a/").mkdirs()
+        file("libs/arm64-v8a/").mkdirs()
+    }
+}
+tasks.whenTaskAdded { packageTask ->
+    if (packageTask.name.contains("package")) {
+        packageTask.dependsOn 'copyAndroidNatives'
+    }
+}
+task run(type: Exec) {
+    def path
+    //这个可以使用 apply from
+    def localProperties = project.file("../local.properties")
+    if (localProperties.exists()) {
+        Properties properties = new Properties()
+        localProperties.withInputStream { instr ->
+            properties.load(instr)
+        }
+        def sdkDir = properties.getProperty('sdk.dir')
+        if (sdkDir) {
+            path = sdkDir
+        } else {
+            path = "$System.env.ANDROID_HOME"
+        }
+    } else {
+        path = "$System.env.ANDROID_HOME"
+    }
+
+    def adb = path + "/platform-tools/adb"
+    commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.kangwang.word/com.kangwang.word.AndroidLauncher'
+}
+// sets up the Android Idea project, using the old Ant based build.
+idea {
+    module {
+        sourceDirs += file("src");
+        scopes = [COMPILE: [plus: [project.configurations.compile]]]
+
+        iml {
+            withXml {
+                def node = it.asNode()
+                def builder = NodeBuilder.newInstance();
+                builder.current = node;
+                builder.component(name: "FacetManager") {
+                    facet(type: "android", name: "Android") {
+                        configuration {
+                            option(name: "UPDATE_PROPERTY_FILES", value: "true")
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+
+    maven { url "https://dl.bintray.com/ironsource-mobile/android-sdk" }// for ironsource
+    maven { url 'https://jitpack.io' }//for vungle
+    maven { url "https://maven.google.com/" }
+    maven { url "https://mvnrepository.com/" }
+    flatDir {
+        dirs 'libs'  // 申明本地库
+    }
+}
+dependencies {
+    /*implementation(name:'doodleads-admoblow',ext:'aar')*/
+    compile project(':core')
+    compile name: 'doodleads-v4.11'
+    compile 'com.google.android.gms:play-services-ads-lite:11.2.0'
+    compile (name:'doodleads-admoblow',ext:'aar')
+    compile name:'gdx-backend-android'
+    /*implementation files('libs\\doodleads-admoblow.aar')*/
+}
+
+
+
+sourceSets.main.java.srcDirs = ["src/"]
+等同于
+sourceSets{
+    main{
+        java{
+            srcDirs = ["src/"]
+        }
+    }
+}

@@ -1,0 +1,3 @@
+include "core", "desktop", "android",'gdx'
+
+//setting文件的作用是配置项目一共有多少个模块

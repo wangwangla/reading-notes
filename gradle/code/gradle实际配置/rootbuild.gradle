@@ -1,0 +1,38 @@
+//apply plugin: "idea"
+//使用第三方插件的时候，开始的时候我们需要进行设置，设置之后就可以使用插件了
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
+}
+//所有的项目都是有这个
+allprojects {
+    apply plugin: "idea"
+    version = "1.0"
+    ext {
+        appName = "Word Stack"
+    }
+    
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+        maven { url "https://maven.google.com/" }
+        maven { url "https://mvnrepository.com/" }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+        flatDir {
+            dirs 'libs'  // 申明本地库
+        }
+    }
+}
