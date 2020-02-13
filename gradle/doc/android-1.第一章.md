@@ -8,6 +8,47 @@ gradle是一个构建系统系统工具，他的DSL基于Groovy实现， 可以�
 
 ## wrapper
 
+如果下面的参数不指定，那么就使用默认的版本。
+
+- 指定wrapper版本
+
+```java
+gradle wrapper --gradle-version 2.4
+```
+
+- 指定下载gradle的位置
+
+```java
+gradle wrapper --gradle-distribution-url http://……
+```
+
+- 下来说文件，我们执行的时候，参数命令都会写入文件中
+
+```java
+distributionBase : 下载Gradle压缩包的存储目录
+distributionPakth : 相对于base解压缩后的gradle目录
+zipStoreBase : 存放zip
+zipStorePath : 和path同目录，存放的是zip
+distributionUrl : Gradle发行版压缩包的下载地址
+```
+
+**说点别的**
+
+all和bin的区别?
+> all是将所有的东西都下载了，比如说文档还有各类资源，源码。
+
+## 我们使用Task指定版本
+
+我们在build中，
+
+```java
+Task wrapper(type:Wrapper){
+    gradleVerion = '2.4'
+}
+```
+
+## 其他
+
 它是对于gradle的一层包装，便于团队进行使用统一的版本构建，在开发过程中使用的都是这样的格式，而不是下载gradle的zip，wrapper在window下有一个批处理脚本，wrapper启动gradle进行一个检查，如果没有那么就从网址进行下载。
 
 gradle提供了内置的wrapper帮助我们生成wrapper所需要的目录，在根目录输入gradle wrapper即可生成
