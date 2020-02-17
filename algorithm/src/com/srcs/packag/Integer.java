@@ -1,5 +1,7 @@
 package com.srcs.packag;
 
+import java.util.Arrays;
+
 public class Integer extends Number {
     @Override
     public int intValue() {
@@ -23,6 +25,7 @@ public class Integer extends Number {
 
     public static void main(String[] args) {
         String str = new String();
+        Arrays arrays = new Arrays();
 
     }
 }
