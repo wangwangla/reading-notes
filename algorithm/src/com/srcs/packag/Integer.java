@@ -20,4 +20,9 @@ public class Integer extends Number {
     public double doubleValue() {
         return 0;
     }
+
+    public static void main(String[] args) {
+        String str = new String();
+
+    }
 }
