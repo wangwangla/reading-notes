@@ -1,6 +1,9 @@
 package com.srcs.packag;
 
-import java.util.Arrays;
+//import java.util.Arrays;Arrays
+//import java.util.Vector;
+
+import java.util.Vector;
 
 public class Integer extends Number {
     @Override
@@ -25,7 +28,12 @@ public class Integer extends Number {
 
     public static void main(String[] args) {
         String str = new String();
-        Arrays arrays = new Arrays();
+       // Arrays arrays = Arrays.sort();
+//        Arrays arrays = new Arrays();
+//        Double.doubleToLongBits()
+        Double double1 = new Double(3);
+
+        Vector vector = new Vector();
 
     }
 }
