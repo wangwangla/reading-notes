@@ -1,11 +1,23 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.Vector;
+import sun.plugin.javascript.navig.LinkArray;
+
+import java.util.*;
 
 public class Main {
-
+    static class Node<E>{
+        E element;
+        Node<E> pre;
+        Node<E> nex;
+        public Node(Node pre , E e ,Node nex){
+            this.pre = pre;
+            this.element = e;
+            this.nex = nex;
+        }
+    }
     public static void main(String[] args) {
+        Node node = new Node<Integer>(null,1,null);
+        
 	// write your code here
 //        Vector vector = new Vector();
 //        vector.add("1");
@@ -39,13 +51,18 @@ public class Main {
 //        }
 //
 //
-        Vector vector = new Vector();
-        vector.add(1);
-        vector.add(2);
+//        Vector vector = new Vector();
+//        vector.add(1);
+//        vector.add(2);
+//
+//        int a = 10;
+//        System.out.println(a+"============");
+//        a = a + (a >> 1);
+//        System.out.println(a+"new");
+//
+//
+//        Calendar.getInstance();
+//        LinkedList
 
-        int a = 10;
-        System.out.println(a+"============");
-        a = a + (a >> 1);
-        System.out.println(a+"new");
     }
 }
