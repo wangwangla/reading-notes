@@ -16,7 +16,7 @@ public class Main {
         }
     }
     public static void main(String[] args) {
-        Node node = new Node<Integer>(null,1,null);
+//        Node node = new Node<Integer>(null,1,null);
         
 	// write your code here
 //        Vector vector = new Vector();
@@ -65,4 +65,14 @@ public class Main {
 //        LinkedList
 
     }
+
+//    public void f(){
+//
+//    }
+//
+//    public int f(){
+//
+//    }
+
+//    不可以通过返回值来区分函数
 }
