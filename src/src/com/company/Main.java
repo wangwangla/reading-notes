@@ -63,6 +63,19 @@ public class Main {
 //
 //        Calendar.getInstance();
 //        LinkedList
+//        LinkArray array = new LinkArray();
+//        HashMap hashMap = new HashMap();
+//
+//
+//        Demo01 demo01 = new Demo02();
+//        System.out.println(demo01.fold+"========"+demo01.getFold());
+//        Demo02 demo02 = new Demo02();
+//        System.out.println(demo02.fold+"======="+demo02.getFold());
+//        Demo03 demo03 = new Demo03();
+        //private 构造函数不可以访问   保护类型竟然是可以的
+//        Demo demo = new Demo();
+        //类的访问权限
+        Demo
 
     }
 
