@@ -2,8 +2,9 @@ package com.algorithm.sort.shell;
 
 import com.algorithm.sort.father.SortAbstr;
 
-import java.util.Arrays;
-
+/**
+ * shell排序
+ */
 public class ShellSort extends SortAbstr {
     public static void sort(Comparable[] comparable){
         //求出h

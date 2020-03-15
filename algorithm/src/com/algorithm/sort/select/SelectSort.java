@@ -2,9 +2,12 @@ package com.algorithm.sort.select;
 
 import com.algorithm.sort.father.SortAbstr;
 
+/**
+ * 选择排序
+ */
 public class SelectSort extends SortAbstr {
     public static void sort(Comparable[] a){
-        int min = 0;
+        int min = Integer.MIN_VALUE;
         //最后一个数据了，就不需要在比较了，所以是length-1
         for (int i = 0; i < a.length-1; i++) {
             min = i;

@@ -4,6 +4,9 @@ import com.algorithm.sort.father.SortAbstr;
 
 import java.util.Arrays;
 
+/**
+ * 归并排序
+ */
 public class GuiBingSort extends SortAbstr {
     public void sort(int a[]){
         arr = new int[a.length];

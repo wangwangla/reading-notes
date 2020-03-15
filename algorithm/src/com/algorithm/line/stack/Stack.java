@@ -1,7 +1,11 @@
-package com.algorithm.line;
+package com.algorithm.line.stack;
 
 import java.util.Iterator;
 
+/**
+ * 栈
+ * @param <T>
+ */
 //一定要实现Iterable，一定要加上<T>
 public class Stack<T> implements Iterable<T> {
     //记录结点

@@ -2,6 +2,9 @@ package com.algorithm.sort.insert;
 
 import com.algorithm.sort.father.SortAbstr;
 
+/**
+ * 插入排序
+ */
 public class InsertSort extends SortAbstr {
     public void sort(Comparable[] a){
         //确定数据的开始和结尾开始数据是1，结尾为数组的最后一个元素

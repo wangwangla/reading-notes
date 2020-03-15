@@ -2,6 +2,9 @@ package com.algorithm.sort.bubble;
 
 import com.algorithm.sort.father.SortAbstr;
 
+/**
+ * 冒泡排序
+ */
 public class Bubble extends SortAbstr {
     /**
      * 对数组进行排序

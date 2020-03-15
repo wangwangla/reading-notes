@@ -1,7 +1,5 @@
 package com.queue;
 
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
-
 import java.util.Iterator;
 
 public class Queue<T> implements Iterable<T>{

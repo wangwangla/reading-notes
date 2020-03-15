@@ -1,5 +1,10 @@
 package com.algorithm.symbol;
 
+/**
+ * 符号存储的是key  value
+ * @param <Key>
+ * @param <Value>
+ */
 public class SymbolTable<Key extends Comparable,Value> {
     private Node head;
     private int N;

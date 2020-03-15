@@ -1,5 +1,10 @@
 package com.algorithm.bina;
 
+/**
+ * 二叉树
+ * @param <Key>
+ * @param <Value>
+ */
 public class BinaryTree<Key extends Comparable<Key>,Value> {
     private Node root;
     private int N;
