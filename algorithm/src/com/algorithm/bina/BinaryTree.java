@@ -1,5 +1,7 @@
 package com.algorithm.bina;
 
+import com.queue.Queue;
+
 /**
  * 二叉树
  * @param <Key>
@@ -117,5 +119,40 @@ public class BinaryTree<Key extends Comparable<Key>,Value> {
         System.out.printf("输出："+binaryTree.size());
         binaryTree.delete(2);
         System.out.println(binaryTree.size());
+    }
+
+    public Queue<Key> Les(){
+        Queue<Key> keys = new Queue<Key>();
+        Queue<Node> nodes = new Queue<>();
+        nodes.enqueue(root);
+        while (!nodes.idEmpty()){
+            Node node = nodes.dequeue();
+            keys.equals(node.key);
+            if (node.left!=null) {
+                nodes.enqueue(node.left);
+            }
+            if (node.right!=null) {
+                nodes.enqueue(node.right);
+            }
+        }
+        return keys;
+    }
+
+    public int depth(Node node){
+        if (node == null){
+            return 0;
+        }
+        int max = 0;
+        int maxR = 0;
+        int maxL = 0;
+
+        if (node.left!=null){
+            maxL = depth(node.left);
+        }
+        if (node.right!=null){
+            maxR = depth(node.right);
+        }
+        max = Math.max(maxL,maxR)+1;
+        return max;
     }
 }
