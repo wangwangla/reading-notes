@@ -108,4 +108,19 @@ public class LianBiao<T> implements Iterable<T> {
             System.out.println(iterator.next());
         }
     }
+
+    public void reseve(){
+
+    }
+
+    public Node reseve(Node curr){
+        if (curr.next == null){
+            return curr;
+        }
+        Node pre = reseve(curr.next);
+        pre.next = curr;
+        curr.next = null;
+        return curr;
+
+    }
 }

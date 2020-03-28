@@ -10,7 +10,7 @@ public class Bubble extends SortAbstr {
      * 对数组进行排序
      * @param a
      */
-    public static void sort(Comparable[] a){
+    public static<T extends Comparable<T>> void sort(T[] a){
         //冒泡次数
         for (int i = a.length - 1; i > 0 ; i--) {
             //冒泡最大的索引

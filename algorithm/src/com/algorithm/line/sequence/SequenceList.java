@@ -2,6 +2,10 @@ package com.algorithm.line.sequence;
 
 import java.util.Objects;
 
+/**
+ * 线性表
+ * @param <T>
+ */
 public class SequenceList<T> {
     private T[] elements;
     private int N;
