@@ -51,8 +51,83 @@ package com.letcode;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class Question9 {
-    //将字符出
-    public static void main(String[] args) {
+    /**
+     * 这个方法可以不，可以，但是有什么问题，string转换为Inter总是出错，如果超过了他的范围
+     * 可以使用Long呀，对，可以使用，但是使用long如果编译器不支持（如提交letcode）怎么办。、
+     *
+     * 对于这个，这样很愚蠢，还不如使用num*10+temp; 判断的使用使用num>Interger.MAX/10.
+     * @param str
+     * @return
+     */
+    public static int myAtoi(String str) {
+        boolean flag = false;
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+//            char c = str.charAt(i);
+//            if (c==' '){
+//                continue;
+//            }else if (c == '-'){
+//                flag = true;
+//            }else if(c>'9'&&c<'0'){
+//                if(builder.length()==1&&flag){
+//                    continue;
+//                }
+//            }
+            if (builder.length()==0&&str.charAt(i)>='a'&&str.charAt(i)<='z'){
+                break;
+            }
+            if (str.charAt(i)=='-'||str.charAt(i)>='0'&&str.charAt(i)<='9'){
+                builder.append(str.charAt(i));
+            }
+        }
+        if (builder.length()==0){
+            return 0;
+        }
+        if(builder.length() == 1&& builder.charAt(0)=='-')return 0;
+       // System.out.println(builder.toString());
+        return 0;
+    }
 
+    /**
+     * 目前 +2没过   +-2
+     * @param str
+     * @return
+     */
+    public static int myAtoi1(String str) {
+        boolean flag = false;
+        int num=0;
+        for (int i = 0; i < str.length(); i++) {
+            if (!flag&&str.charAt(i)>='a'&&str.charAt(i)<='z'&&num == 0){
+                return 0;
+            }
+            if (str.charAt(i)=='-'){
+                flag = true;
+            }
+
+            if (str.charAt(i)>='0'&&str.charAt(i)<='9'){
+                if (flag){
+                    if (-num<Integer.MIN_VALUE/10)
+                        return -Integer.MIN_VALUE;
+                }else {
+                    if (num>Integer.MAX_VALUE/10)
+                        return Integer.MAX_VALUE;
+                }
+                num = num*10+str.charAt(i)-'0';
+            }
+        }
+        if (flag){
+            num = -num;
+        }
+        return num;
+    }
+    public static void main(String[] args) {
+        String str = "words and 987";
+        str = "- words and 987";
+        str = "- words and";
+       // str = "words and 987";
+      //  str = "419388837777474884 with words";
+        str = "+-2";
+        System.out.println(myAtoi1(str));
+        System.out.println(Integer.MAX_VALUE);
     }
 }
