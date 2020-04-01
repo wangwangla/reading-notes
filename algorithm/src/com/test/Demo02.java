@@ -1,7 +1,5 @@
 package com.test;
 
-import com.chonggou.Demo;
-
 public class Demo02 {
     public static void main(String[] args) {
         Demo02 demo02 = new Demo02();

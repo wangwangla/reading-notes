@@ -1,4 +1,4 @@
-package com.chonggou;
+package com.chonggou.chapter.six;
 
 import java.util.ArrayList;
 
