@@ -14,9 +14,11 @@ package com.algorithm.dongtaiguihua;
  *
  *  2.转移方程
  *    f[X] = min{f[x-2]+1,f[x-5]+1,f[x - 7]+1}
+ *
  *  3.初始条件和边界条件
  *    f[x] = min{f[x - 2]+1,f[x-5]+1,……}
  *    如果下标小于0
+ *
  *  4.计算顺序
  */
 public class Question1 {
@@ -124,6 +126,7 @@ public class Question1 {
      * 障碍物出位0
      */
     public int unTwo(int arr[][],int m,int n){
+        if (m==0||n==0)return 0;
         int [][] f = new int[m][n];
         for (int i1 = 0; i1 < m; i1++) {
             for (int i2 = 0; i2 < n; i2++) {
@@ -167,20 +170,264 @@ public class Question1 {
         return f[n-1];
     }
 
+    /**
+     * 房子染色问题，相邻的房子颜色不相同
+     */
+    public int minCost(int[][] costs){
+        int n = costs.length;//房子的个数
+        //如果房子个数为0，就返回0
+        if (n == 0){
+            return 0;
+        }
+        //创建数组，记录数值   0作为初始化，n个房子，考虑是前n-1,n-2,所以计算到N+1，才可以计算到N
+        int f[][]=new int[n+1][3];
+        for (int i = 0; i < n; i++) {
+            //n-1房子
+            for (int j = 0; j < 3; j++) {
+                //n-2房子
+                for (int k = 0; k < 3; k++) {
+                    //不能让他们一样
+                    if (j==k){
+                        continue;
+                    }
+                    //找出前两个的最小值
+                    if (f[i-1][k]+costs[i-1][j]<f[i][j]){
+                        f[i][j] = f[i-1][k]+costs[i-1][j];
+                    }
+                }
+            }
+        }
+        return 0;
+    }
 
+    /**
+     * 解码的问题  A->z 对应的是1-26  输入一长串数字字符串，求出共有多少解码方式
+     *
+     * 都只可以解析成一位，那么就只有一种结果
+     * 有两位了结果就会增加。
+     */
+    public int soultion(){
+        String str = "";
+        char[] arr = str.toCharArray();
+        //计算出长度
+        int length = arr.length;
+        if (length == 0){
+            return 1;
+        }
+        //创建一个数组存储 每个字符处的个数     0不使用   1~length
+        int f [] = new int[length+1];
+        f[0] = 1;
+        for (int i = 0; i < arr.length; i++) {
+            //取出每一位   123234332
+            int temp = arr[i] - '0';//字符变为数字
+            f[i] = 0;
+            //因为单个0 没意义
+            if (temp>=1){
+                f[i] += f[i-1];
+            }
+            if (i>1){
+                //如果是两位值  现在需要将两位数据转换为整数，是不是在1~26范围内
+                int num = f[i-2]*10+f[i-1];
+                if (num>0&&num<27){
+                    f[i] = f[i]+f[i-2];
+                }
+            }
+        }
+        return f[length];
+    }
 
+    /**
+     * 求出最长的增长字串
+     *
+     * 数组
+     *      找出最长递增字串
+     *      12345 ——>  5
+     *      51234 ——>  4
+     */
+    public int length(int a[]){
+        if (a.length <2) {
+            return 1;
+        }
+        f(a);
+        //反转数组
+        f(a);
+        return 0;
+    }
+    private int max = 0;
+    public void f(int a[]){
+        int f [] = new int[a.length];
+        f[0] = 1;
+        for (int i = 1; i < a.length; i++) {
+            f[i] = 1;
+            if (a[i]>a[i-1]){
+                f[i] = f[i-1]+1;
+            }
+        }
+        for (int i = 0; i < f.length; i++) {
+            if (max > f[i]){
+                max = f[i];
+            }
+        }
+    }
+    /**
+     * 所走的路径，和最短
+     *
+     * 创建二位数组
+     *
+     * if(i=1||j=0){
+     *     f[i][j] = A[i][j];
+     * else
+     *    f[i][j] = min(f[i-1][j],f[i][j-1])+A[i][j]
+     * }
+     */
+    public int minP(int [][]arr){
+        if (arr==null||arr.length == 0||arr[0].length==0){
+            return 0;
+        }
+        int m = arr.length;
+        int n = arr[0].length;
+        int [][]f = new int[2][n];
+        int old = 1;
+        int now = 0;
+        for (int i = 0; i < m; i++) {
+            old = now;
+            now = 1-old;
+            for (int i1 = 0; i1 < n; i1++) {
+                f[now][i1] = arr[i][i1];
+                if (i==0&&i1 == 0){
+                    continue;
+                }
+                //不是第一个位置的，
+            }
+        }
+        return 0;
+    }
 
+    /**
+     * 所走的路径，和最短
+     *
+     * 创建二位数组
+     *
+     * if(i=1||j=0){
+     *     f[i][j] = A[i][j];
+     * else
+     *    f[i][j] = min(f[i-1][j],f[i][j-1])+A[i][j]
+     * }
+     */
+    public void tets(){
+        int arr[][] = new int[10][10];
+        if (arr!=null&&(arr.length==0||arr[0].length==0)){
+            return;
+        }
+        int [][] f= new int[arr.length][arr[0].length];
+        for (int i = 0; i < arr.length; i++) {
+            for (int i1 = 0; i1 < arr[0].length; i1++) {
+                if (i==0||i1==0){
+                    f[i][i1] = arr[i][i1];
+                }else {
+                    f[i][i1] = Math.min(f[i-1][i1],f[i][i1-1])+arr[i][i1];
+                }
+            }
+        }
+        System.out.println(f[arr.length-1][arr[0].length]);
+    }
 
+    public static void test(){
+        int arr[][] = {{0,0,0},{0,0,0},{0,0,0}};
+        int n = arr.length;
+        int m = arr[0].length;
+        if (n==0||m == 0){
+            return;
+        }
+        int f [][] = new int[n][m];
+        f[0][0] = 1;
+        for (int i = 0; i < n; i++) {
+            for (int i1 = 0; i1 < m; i1++) {
+                if (arr[i][i1] == 1){
+                    f[i1][i] = 0;
+                }else {
+                    if (i==0||i1==0){
+                        f[i][i1] = 1;
+                    }else
+                    f[i][i1] = f[i-1][i1]+f[i][i1-1];
+                }
+            }
+        }
+        System.out.println(f[n-1][m-1]);
+    }
 
+    public void paintHouse(int arr[][]){
+        //房子个数
+        int numHouse = arr.length;
+        int f[][] = new int[numHouse+1][3];
+        f[0][0]=0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+                for (int k = 0; k < arr[0].length; k++) {
+                   if (j == k){
+                       continue;
+                   }
+                   f[i][j] = Integer.MAX_VALUE;
+                   //上一个的花费    上上一个花费
+                   if (arr[i-1][k]+f[i-1][j]<f[i][j]){
+                       f[i][j] = arr[i-1][k]+f[i-1][j];
+                   }
+                }
+            }
+        }
+//        最后一步找出最大值
+    }
 
+    public void jiemi(String str){
+        char[] chars = str.toCharArray();
+        int len = chars.length;
+        int f[] = new int[len];
+        if (len == 0)return;
+        f[0] = 1;
+        for (int i = 0; i < len; i++) {
+//            int num =
+        }
+    }
 
+    public static void oneNum(){
+        int num =  10;
+        int f[] = new int[num+1];
+        f[0] = 0;
+        int i;
+        for (int i1 = 0; i1 < num; i1++) {
+            f[i1] = f[i1>>1] + (i1%2);
+            System.out.println(f[i1]+" "+i1);
+        }
 
+    }
 
+    public static void main(String[] args) {
+//        test();
+        oneNum();
+    }
 
-
-
-
-
-
-
+    /**
+     * 一列数据，求出最小值，去掉某个值之后的最小值
+     * */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
