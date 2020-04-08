@@ -38,11 +38,48 @@ public class Question22 {
             max = nums[i];
         }
         return max;
-
     }
 
+    /**
+     * 扩展，让房子变为一个环
+     * @param nums
+     * @return
+     */
+    public static int rob1(int[] nums) {
+        if (nums.length==0)return 0;
+        if(nums.length == 1)return nums[0];
+        if(nums.length == 2)return Math.min(nums[0],nums[1]);
+
+        int f[] = new int[nums.length+1];
+        f[0] = 0;
+        f[1] = nums[0];
+        f[2] = nums[1];
+        for (int i = 3; i < f.length; i++) {
+            f[i] = nums[i-1] + Math.max(f[i-3],f[i-2]);
+        }
+
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < f.length; i++) {
+            if (f[i]>max)
+                max = f[i];
+        }
+        return max;
+    }
+
+
+    public static int rob2(int[] nums) {
+        if (nums.length==0)return 0;
+        int f[] = new int[nums.length+1];
+        f[0] = 0;
+        f[1] = nums[0];
+        for (int i = 2; i < f.length; i++) {
+            f[i] = Math.max(f[i-1],f[i-2]+nums[i-1]);
+        }
+        return f[nums.length];
+    }
     public static void main(String[] args) {
-        int arr[] = {1,2,3,4,1};
-        rob(arr);
+        int arr[] = {1,2,};
+//        rob(arr);
+        rob1(arr);
     }
 }

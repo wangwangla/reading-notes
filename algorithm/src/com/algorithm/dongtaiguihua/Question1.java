@@ -122,7 +122,7 @@ public class Question1 {
     }
 
     /**
-     * 如果存在障碍物
+     * 如果存在障碍物                坐标型
      * 障碍物出位0
      */
     public int unTwo(int arr[][],int m,int n){
@@ -171,6 +171,9 @@ public class Question1 {
     }
 
     /**
+     * 序列
+     *
+     *
      * 房子染色问题，相邻的房子颜色不相同
      */
     public int minCost(int[][] costs){
