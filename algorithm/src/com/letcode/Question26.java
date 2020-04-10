@@ -26,5 +26,6 @@ public class Question26 {
             }
         }
         return A.length-1;
+
     }
 }

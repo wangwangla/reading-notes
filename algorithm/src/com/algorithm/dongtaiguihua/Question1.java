@@ -162,7 +162,8 @@ public class Question1 {
         f[0] = true;
         for (int i = 1; i < n; i++) {
             for (int j = 0; j < i; j++) {
-                if (f[j]&&j+a[j]>=j){
+                //可以跳到   第j个首先可以跳到，j+当前值需要大于
+                if (f[j]&&j+a[j]>=i){
                     f[i] = true;
                 }
             }
@@ -240,8 +241,12 @@ public class Question1 {
     }
 
     /**
-     * 求出最长的增长字串
+     * 求出最长的递增字串
      *
+     * 从1开始，f可以从0 开始
+     * f[0] = 1;
+     * if(a[i]>a[i-1])  f[i] +=1;
+     * else f[i] =0 ;
      * 数组
      *      找出最长递增字串
      *      12345 ——>  5

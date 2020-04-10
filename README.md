@@ -43,3 +43,8 @@ http://jetbrains-license-server
 - effect java一个
 - gradle for android ten page
 
+## plain
+
+### 动态规划
+### 字典树
+### 图
