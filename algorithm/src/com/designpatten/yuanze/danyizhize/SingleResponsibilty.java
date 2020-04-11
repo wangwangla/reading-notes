@@ -1,4 +1,4 @@
-package com.designpatten.danyizhize;
+package com.designpatten.yuanze.danyizhize;
 
 public class SingleResponsibilty {
     public static void main(String[] args) {
