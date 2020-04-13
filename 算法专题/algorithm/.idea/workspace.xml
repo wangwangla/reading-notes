@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="51dea5fe-9e63-4590-b5e2-9477d50b9c46" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/designpatten/factory/method/pazzia/BjPazza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/designpatten/factory/none/pazzia/TianNaiPizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/designpatten/factory/method/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/designpatten/factory/method/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/designpatten/factory/method/order/BjPazzia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/designpatten/factory/method/order/BjOrderPazzia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/designpatten/factory/method/order/PazziaOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/designpatten/factory/method/order/PazziaOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/designpatten/factory/none/order/PazziaOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/designpatten/factory/none/order/PazziaOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/designpatten/factory/none/pazzia/CheesePizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/designpatten/factory/none/pazzia/NaiyouPizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/designpatten/factory/simple/factory/SimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/designpatten/factory/simple/factory/SimpleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/designpatten/factory/simple/order/PazziaOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/designpatten/factory/simple/order/PazziaOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/designpatten/factory/simple/pazzia/CheesePizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/designpatten/factory/simple/pazzia/NaiLaoPizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/designpatten/factory/simple/pazzia/Pazza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/designpatten/factory/simple/pazzia/Pazza.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1Xt2eEk0HPkckkViQPUBvZ24Uzd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/代码" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.algorithm.sort" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.designpatten.factory.none.order" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\reading-notes\algorithm\src\com\designpatten\factory\simple" />
+      <recent name="E:\reading-notes\algorithm\src\com\designpatten\factory\method" />
+      <recent name="E:\reading-notes\algorithm\src\com\algorithm\sort\father" />
+      <recent name="E:\reading-notes\algorithm\src\com\algorithm\sort" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.designpatten.factory.none.client.Client" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.designpatten.factory.none.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fanxing.cachu.Demo" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fanxing.cachu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Question2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.algorithm.dongtaiguihua.Question2" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.algorithm.dongtaiguihua.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Question22" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.letcode.Question22" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.letcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Question3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.algorithm.dongtaiguihua.Question3" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.algorithm.dongtaiguihua.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Question3" />
+        <item itemvalue="Application.Question2" />
+        <item itemvalue="Application.Question22" />
+        <item itemvalue="Application.Demo (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51dea5fe-9e63-4590-b5e2-9477d50b9c46" name="Default Changelist" comment="" />
+      <created>1581851164423</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581851164423</updated>
+      <workItem from="1581851169299" duration="95000" />
+      <workItem from="1581851300401" duration="109000" />
+      <workItem from="1581855844673" duration="11000" />
+      <workItem from="1581855897225" duration="46000" />
+      <workItem from="1581855965416" duration="1421000" />
+      <workItem from="1581905946148" duration="649000" />
+      <workItem from="1581916251128" duration="203000" />
+      <workItem from="1581941219869" duration="612000" />
+      <workItem from="1582116699095" duration="805000" />
+      <workItem from="1582118782092" duration="5000" />
+      <workItem from="1582118817485" duration="1312000" />
+      <workItem from="1582120635758" duration="655000" />
+      <workItem from="1582122660744" duration="95000" />
+      <workItem from="1582953753097" duration="2480000" />
+      <workItem from="1583020151605" duration="5094000" />
+      <workItem from="1583041441570" duration="2683000" />
+      <workItem from="1583650106879" duration="6775000" />
+      <workItem from="1583707025866" duration="1709000" />
+      <workItem from="1583709491677" duration="7000" />
+      <workItem from="1583711147596" duration="1537000" />
+      <workItem from="1583749746513" duration="3300000" />
+      <workItem from="1583791224406" duration="4557000" />
+      <workItem from="1583931239158" duration="3269000" />
+      <workItem from="1583937897553" duration="5156000" />
+      <workItem from="1584023289079" duration="1976000" />
+      <workItem from="1584055731162" duration="3465000" />
+      <workItem from="1584146105487" duration="5711000" />
+      <workItem from="1584232638145" duration="12790000" />
+      <workItem from="1584317985641" duration="9264000" />
+      <workItem from="1584535989624" duration="5960000" />
+      <workItem from="1584577021231" duration="6767000" />
+      <workItem from="1584713939076" duration="1619000" />
+      <workItem from="1584750092687" duration="14956000" />
+      <workItem from="1584786380707" duration="7857000" />
+      <workItem from="1584838173607" duration="4554000" />
+      <workItem from="1584850856166" duration="15127000" />
+      <workItem from="1584971005778" duration="2331000" />
+      <workItem from="1585008381514" duration="1187000" />
+      <workItem from="1585056685317" duration="11948000" />
+      <workItem from="1585231825129" duration="26000" />
+      <workItem from="1585231882981" duration="12066000" />
+      <workItem from="1585320175699" duration="4903000" />
+      <workItem from="1585354690550" duration="602000" />
+      <workItem from="1585356247240" duration="9492000" />
+      <workItem from="1585375405153" duration="1766000" />
+      <workItem from="1585456091752" duration="9732000" />
+      <workItem from="1585525294510" duration="4107000" />
+      <workItem from="1585573146678" duration="2053000" />
+      <workItem from="1585662629362" duration="13409000" />
+      <workItem from="1585957283843" duration="6234000" />
+      <workItem from="1585974163108" duration="14469000" />
+      <workItem from="1586056638666" duration="24607000" />
+      <workItem from="1586271005169" duration="8638000" />
+      <workItem from="1586432490736" duration="9761000" />
+      <workItem from="1586529400421" duration="13746000" />
+      <workItem from="1586589741268" duration="12113000" />
+      <workItem from="1586665255687" duration="25000" />
+      <workItem from="1586665299732" duration="3075000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="175" key="#Auto_Import" timestamp="1584921694187">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="446" y="175" key="#Auto_Import/0.0.1707.1027@0.0.1707.1027" timestamp="1584921694187" />
+    <state x="589" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585142839111">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="589" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1707.1027@0.0.1707.1027" timestamp="1585142839111" />
+    <state x="0" y="414" key="#com.intellij.ide.util.MemberChooser" timestamp="1586667133587">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="0" y="414" key="#com.intellij.ide.util.MemberChooser/0.0.1707.1027@0.0.1707.1027" timestamp="1586667133587" />
+    <state x="634" y="272" key="FileChooserDialogImpl" timestamp="1586667790715">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="634" y="272" key="FileChooserDialogImpl/0.0.1707.1027@0.0.1707.1027" timestamp="1586667790715" />
+    <state width="1663" height="125" key="GridCell.Tab.0.bottom" timestamp="1586655329519">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1420" height="227" key="GridCell.Tab.0.bottom/0.0.1463.874@0.0.1463.874" timestamp="1582961126202" />
+    <state width="1663" height="125" key="GridCell.Tab.0.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1586655329519" />
+    <state width="1663" height="125" key="GridCell.Tab.0.center" timestamp="1586655329518">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1420" height="227" key="GridCell.Tab.0.center/0.0.1463.874@0.0.1463.874" timestamp="1582961126202" />
+    <state width="1663" height="125" key="GridCell.Tab.0.center/0.0.1707.1027@0.0.1707.1027" timestamp="1586655329518" />
+    <state width="1663" height="125" key="GridCell.Tab.0.left" timestamp="1586655329517">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1420" height="227" key="GridCell.Tab.0.left/0.0.1463.874@0.0.1463.874" timestamp="1582961126202" />
+    <state width="1663" height="125" key="GridCell.Tab.0.left/0.0.1707.1027@0.0.1707.1027" timestamp="1586655329517" />
+    <state width="1663" height="125" key="GridCell.Tab.0.right" timestamp="1586655329519">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1420" height="227" key="GridCell.Tab.0.right/0.0.1463.874@0.0.1463.874" timestamp="1582961126202" />
+    <state width="1663" height="125" key="GridCell.Tab.0.right/0.0.1707.1027@0.0.1707.1027" timestamp="1586655329519" />
+    <state width="1663" height="245" key="GridCell.Tab.1.bottom" timestamp="1586655327345">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1663" height="245" key="GridCell.Tab.1.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1586655327345" />
+    <state width="1663" height="245" key="GridCell.Tab.1.center" timestamp="1586655327345">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1663" height="245" key="GridCell.Tab.1.center/0.0.1707.1027@0.0.1707.1027" timestamp="1586655327345" />
+    <state width="1663" height="245" key="GridCell.Tab.1.left" timestamp="1586655327344">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1663" height="245" key="GridCell.Tab.1.left/0.0.1707.1027@0.0.1707.1027" timestamp="1586655327344" />
+    <state width="1663" height="245" key="GridCell.Tab.1.right" timestamp="1586655327345">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="1663" height="245" key="GridCell.Tab.1.right/0.0.1707.1027@0.0.1707.1027" timestamp="1586655327345" />
+    <state x="357" y="268" key="NewModule_or_Project.wizard" timestamp="1586667797766">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="357" y="268" key="NewModule_or_Project.wizard/0.0.1707.1027@0.0.1707.1027" timestamp="1586667797766" />
+    <state x="227" y="123" key="SettingsEditor" timestamp="1586589714125">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="0" y="0" key="SettingsEditor/0.0.1463.874@0.0.1463.874" timestamp="1581856115723" />
+    <state x="227" y="123" key="SettingsEditor/0.0.1707.1027@0.0.1707.1027" timestamp="1586589714125" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1585181908039">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1707.1027@0.0.1707.1027" timestamp="1585181908039" />
+    <state x="483" y="307" key="com.intellij.ide.util.TipDialog" timestamp="1586665299783">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="414" y="261" key="com.intellij.ide.util.TipDialog/0.0.1463.874@0.0.1463.874" timestamp="1582120635420" />
+    <state x="483" y="307" key="com.intellij.ide.util.TipDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1586665299783" />
+    <state x="935" y="438" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583650460557">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="935" y="438" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1583650460557" />
+    <state x="86" y="293" width="1521" height="841" key="dock-window-1" timestamp="1584023399001">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="86" y="293" width="1521" height="841" key="dock-window-1/0.0.1707.1027@0.0.1707.1027" timestamp="1584023399001" />
+    <state x="558" y="146" key="refactoring.ChangeSignatureDialog" timestamp="1586666681283">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="558" y="146" key="refactoring.ChangeSignatureDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1586666681283" />
+    <state x="257" y="224" key="run.anything.popup" timestamp="1585738652065">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="220" y="191" key="run.anything.popup/0.0.1463.874@0.0.1463.874" timestamp="1581856058456" />
+    <state x="257" y="224" key="run.anything.popup/0.0.1707.1027@0.0.1707.1027" timestamp="1585738652065" />
+    <state x="579" y="347" width="672" height="678" key="search.everywhere.popup" timestamp="1586665727117">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="579" y="347" width="672" height="678" key="search.everywhere.popup/0.0.1707.1027@0.0.1707.1027" timestamp="1586665727117" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/test/paixu.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/test/paixu.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/test/paixu.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/test/paixu.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/guibing/GuiBingSort.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/guibing/GuiBingSort.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/line/stack/Stack.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/bina/BinaryTree.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/bina/BinaryTree.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/bina/BinaryTree.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/guibing/GuiBingSort.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/guibing/GuiBingSort.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithmfuxi/stack/Stack.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithmfuxi/tree/BinTree.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithmfuxi/tree/BinTree.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/question/demo/Question4.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/question/demo/Question5.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question2.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question2.java</url>
+          <line>226</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question2.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question2.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question2.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question5.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question5.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question7.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/bogo/BogoSort.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/bogo/BogoSort.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question7.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question8.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question9.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question9.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question12.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question13.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question13.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question13.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question13.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question18.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question18.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question20.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question21.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question22.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question23.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question22.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/letcode/Question22.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/dongtaiguihua/Question2.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="i+step&lt;str.length()" language="JAVA" />
+        <watch expression="x%10" language="JAVA" />
+        <watch expression="Math.max(f[i-3],f[i-2])" language="JAVA" />
+        <watch expression="Math.min(nums[0],nums[1])" language="JAVA" />
+        <watch expression="nums[0]" language="JAVA" />
+        <watch expression="nums[2]" language="JAVA" />
+        <watch expression="nums[1]" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/algorithm$Stack.ic" NAME="Stack Coverage Results" MODIFIED="1584795228883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.algorithmfuxi.stack.*</FILTER>
+    </SUITE>
+  </component>
+</project>
