@@ -201,14 +201,29 @@ public class Question3 {
      * 输入n=5
      * 输出true
      */
-    public void method4(){
-
+    public static boolean method4(int n){
+        if (n == 0){
+            return false;
+        }
+        if (n<=2){
+            return true;
+        }
+        boolean f[] = new boolean[n+1] ;
+        f[0] = false;
+        f[1] = f[2] = true;
+        for (int i = 3; i <= n; i++) {
+            f[i] = (f[i-1]==false)||(f[i-2] == false);
+        }
+        return f[n];
     }
     public static void main(String[] args) {
 //        System.out.println(mathodOne(10));
-            method2("aa");
-    }
+//            method2("aa");
+        //3个石子，先手必bai
+        System.out.println(method4(3));
 
+        //
+    }
 }
 
 
