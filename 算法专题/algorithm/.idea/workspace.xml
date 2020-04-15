@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51dea5fe-9e63-4590-b5e2-9477d50b9c46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../java专题/java锁/1.synchroized专题.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../java专题/java锁/1.synchroized专题.md" afterDir="false" />
-    </list>
+    <list default="true" id="51dea5fe-9e63-4590-b5e2-9477d50b9c46" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,39 +57,26 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.algorithm.sort" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.designpatten.factory.none.order" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\reading-notes\algorithm\src\com\designpatten\factory\simple" />
       <recent name="E:\reading-notes\algorithm\src\com\designpatten\factory\method" />
       <recent name="E:\reading-notes\algorithm\src\com\algorithm\sort\father" />
       <recent name="E:\reading-notes\algorithm\src\com\algorithm\sort" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.designpatten.factory.none.order" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Question3">
+  <component name="RunManager" selected="Application.Question4">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.designpatten.factory.none.client.Client" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.designpatten.factory.none.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Demo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fanxing.cachu.Demo" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fanxing.cachu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,13 +123,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Question4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.algorithm.dongtaiguihua.Question4" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.algorithm.dongtaiguihua.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Question4" />
         <item itemvalue="Application.Question3" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Question2" />
         <item itemvalue="Application.Question22" />
-        <item itemvalue="Application.Demo (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -217,6 +215,7 @@
       <workItem from="1586665255687" duration="25000" />
       <workItem from="1586665299732" duration="3075000" />
       <workItem from="1586822148472" duration="2017000" />
+      <workItem from="1586873315643" duration="4958000" />
     </task>
     <servers />
   </component>
@@ -236,46 +235,50 @@
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state x="0" y="414" key="#com.intellij.ide.util.MemberChooser/0.0.1707.1027@0.0.1707.1027" timestamp="1586667133587" />
+    <state x="643" y="403" width="421" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586875522619">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="643" y="403" width="421" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1707.1027@0.0.1707.1027" timestamp="1586875522619" />
     <state x="634" y="272" key="FileChooserDialogImpl" timestamp="1586667790715">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state x="634" y="272" key="FileChooserDialogImpl/0.0.1707.1027@0.0.1707.1027" timestamp="1586667790715" />
-    <state width="1663" height="125" key="GridCell.Tab.0.bottom" timestamp="1586824311975">
+    <state width="1663" height="297" key="GridCell.Tab.0.bottom" timestamp="1586910510474">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state width="1420" height="227" key="GridCell.Tab.0.bottom/0.0.1463.874@0.0.1463.874" timestamp="1582961126202" />
-    <state width="1663" height="125" key="GridCell.Tab.0.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1586824311975" />
-    <state width="1663" height="125" key="GridCell.Tab.0.center" timestamp="1586824311975">
+    <state width="1663" height="297" key="GridCell.Tab.0.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1586910510474" />
+    <state width="1663" height="297" key="GridCell.Tab.0.center" timestamp="1586910510474">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state width="1420" height="227" key="GridCell.Tab.0.center/0.0.1463.874@0.0.1463.874" timestamp="1582961126202" />
-    <state width="1663" height="125" key="GridCell.Tab.0.center/0.0.1707.1027@0.0.1707.1027" timestamp="1586824311975" />
-    <state width="1663" height="125" key="GridCell.Tab.0.left" timestamp="1586824311975">
+    <state width="1663" height="297" key="GridCell.Tab.0.center/0.0.1707.1027@0.0.1707.1027" timestamp="1586910510474" />
+    <state width="1663" height="297" key="GridCell.Tab.0.left" timestamp="1586910510474">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state width="1420" height="227" key="GridCell.Tab.0.left/0.0.1463.874@0.0.1463.874" timestamp="1582961126202" />
-    <state width="1663" height="125" key="GridCell.Tab.0.left/0.0.1707.1027@0.0.1707.1027" timestamp="1586824311975" />
-    <state width="1663" height="125" key="GridCell.Tab.0.right" timestamp="1586824311975">
+    <state width="1663" height="297" key="GridCell.Tab.0.left/0.0.1707.1027@0.0.1707.1027" timestamp="1586910510474" />
+    <state width="1663" height="297" key="GridCell.Tab.0.right" timestamp="1586910510474">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state width="1420" height="227" key="GridCell.Tab.0.right/0.0.1463.874@0.0.1463.874" timestamp="1582961126202" />
-    <state width="1663" height="125" key="GridCell.Tab.0.right/0.0.1707.1027@0.0.1707.1027" timestamp="1586824311975" />
-    <state width="1663" height="425" key="GridCell.Tab.1.bottom" timestamp="1586824311968">
+    <state width="1663" height="297" key="GridCell.Tab.0.right/0.0.1707.1027@0.0.1707.1027" timestamp="1586910510474" />
+    <state width="1663" height="2" key="GridCell.Tab.1.bottom" timestamp="1586910510459">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state width="1663" height="425" key="GridCell.Tab.1.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1586824311968" />
-    <state width="1663" height="425" key="GridCell.Tab.1.center" timestamp="1586824311968">
+    <state width="1663" height="2" key="GridCell.Tab.1.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1586910510459" />
+    <state width="1663" height="2" key="GridCell.Tab.1.center" timestamp="1586910510459">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state width="1663" height="425" key="GridCell.Tab.1.center/0.0.1707.1027@0.0.1707.1027" timestamp="1586824311968" />
-    <state width="1663" height="425" key="GridCell.Tab.1.left" timestamp="1586824311967">
+    <state width="1663" height="2" key="GridCell.Tab.1.center/0.0.1707.1027@0.0.1707.1027" timestamp="1586910510459" />
+    <state width="1663" height="2" key="GridCell.Tab.1.left" timestamp="1586910510459">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state width="1663" height="425" key="GridCell.Tab.1.left/0.0.1707.1027@0.0.1707.1027" timestamp="1586824311967" />
-    <state width="1663" height="425" key="GridCell.Tab.1.right" timestamp="1586824311968">
+    <state width="1663" height="2" key="GridCell.Tab.1.left/0.0.1707.1027@0.0.1707.1027" timestamp="1586910510459" />
+    <state width="1663" height="2" key="GridCell.Tab.1.right" timestamp="1586910510459">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state width="1663" height="425" key="GridCell.Tab.1.right/0.0.1707.1027@0.0.1707.1027" timestamp="1586824311968" />
+    <state width="1663" height="2" key="GridCell.Tab.1.right/0.0.1707.1027@0.0.1707.1027" timestamp="1586910510459" />
     <state x="357" y="268" key="NewModule_or_Project.wizard" timestamp="1586667797766">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
@@ -289,11 +292,11 @@
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1707.1027@0.0.1707.1027" timestamp="1585181908039" />
-    <state x="483" y="307" key="com.intellij.ide.util.TipDialog" timestamp="1586822148866">
+    <state x="483" y="307" key="com.intellij.ide.util.TipDialog" timestamp="1586873344438">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state x="414" y="261" key="com.intellij.ide.util.TipDialog/0.0.1463.874@0.0.1463.874" timestamp="1582120635420" />
-    <state x="483" y="307" key="com.intellij.ide.util.TipDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1586822148866" />
+    <state x="483" y="307" key="com.intellij.ide.util.TipDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1586873344438" />
     <state x="935" y="438" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583650460557">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
@@ -311,10 +314,10 @@
     </state>
     <state x="220" y="191" key="run.anything.popup/0.0.1463.874@0.0.1463.874" timestamp="1581856058456" />
     <state x="257" y="224" key="run.anything.popup/0.0.1707.1027@0.0.1707.1027" timestamp="1585738652065" />
-    <state x="579" y="347" width="672" height="678" key="search.everywhere.popup" timestamp="1586822603417">
+    <state x="579" y="347" width="672" height="678" key="search.everywhere.popup" timestamp="1586875784428">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="579" y="347" width="672" height="678" key="search.everywhere.popup/0.0.1707.1027@0.0.1707.1027" timestamp="1586822603417" />
+    <state x="579" y="347" width="672" height="678" key="search.everywhere.popup/0.0.1707.1027@0.0.1707.1027" timestamp="1586875784428" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -549,6 +552,11 @@
           <line>216</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/dongtaiguihua/Question4.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -560,6 +568,7 @@
         <watch expression="nums[0]" language="JAVA" />
         <watch expression="nums[2]" language="JAVA" />
         <watch expression="nums[1]" language="JAVA" />
+        <watch expression="j-arr[i]" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
