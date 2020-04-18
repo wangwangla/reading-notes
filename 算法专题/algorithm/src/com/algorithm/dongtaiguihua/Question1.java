@@ -185,18 +185,20 @@ public class Question1 {
         }
         //创建数组，记录数值   0作为初始化，n个房子，考虑是前n-1,n-2,所以计算到N+1，才可以计算到N
         int f[][]=new int[n+1][3];
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             //n-1房子
             for (int j = 0; j < 3; j++) {
+                f[i][j] = Integer.MAX_VALUE;
                 //n-2房子
                 for (int k = 0; k < 3; k++) {
                     //不能让他们一样
                     if (j==k){
                         continue;
                     }
-                    //找出前两个的最小值
+                    //找出前两个的最小值   说是记录前两个颜色，其实就是本次染色和上次染色，  本次和上次颜色不一样
                     if (f[i-1][k]+costs[i-1][j]<f[i][j]){
-                        f[i][j] = f[i-1][k]+costs[i-1][j];
+                        //前一个房子使用k颜色  当前使用j颜色
+                       f[i][j] = f[i-1][k]+costs[i-1][j];
                     }
                 }
             }
@@ -287,7 +289,11 @@ public class Question1 {
      * else
      *    f[i][j] = min(f[i-1][j],f[i][j-1])+A[i][j]
      * }
-     */
+     *
+     *
+     * new记录本次值
+     * old记录上次的值
+     * */
     public int minP(int [][]arr){
         if (arr==null||arr.length == 0||arr[0].length==0){
             return 0;
@@ -417,6 +423,49 @@ public class Question1 {
     /**
      * 一列数据，求出最小值，去掉某个值之后的最小值
      * */
+
+    public int paintHouse1(int arr[][]){
+        if(arr == null || arr.length == 0){
+            return 0;
+        }
+        int n = arr.length;
+        int K = arr[0].length;
+        int [][]f = new int[n+1][K];
+        int min1,min2;
+        int j1=0,j2 = 0;
+        int i,j,k;
+        for (j = 0; j < K; j++) {
+            f[0][j] = 0;
+        }
+        for (i = 0; i < n; i++) {
+            min1 = min2 = Integer.MAX_VALUE;
+            for (j = 0; j < K; j++) {
+                if(f[i-1][j] < min1){
+                    min2 = min1;
+                    min1 = f[i-1][j];
+                    j2 = j1;
+                    j1 = j;
+                }else {
+                    if (f[i - 1][j] < min2) {
+                        min2 = f[i - 1][j];
+                        j2 = j;
+                    }
+                }
+            }
+            for (j = 0; j < K; j++) {
+                if (j!=i){
+                    f[i][j] = f[i-1][j1] + arr[i-1][j];
+                }else {
+                    f[i][j] = f[i-1][j2] + arr[i-1][j];
+                }
+            }
+        }
+        int res = Integer.MAX_VALUE;
+        for (j = 0; j < K; j++) {
+            res = Math.min(res,f[n][j]);
+        }
+        return 0;
+    }
 }
 
 

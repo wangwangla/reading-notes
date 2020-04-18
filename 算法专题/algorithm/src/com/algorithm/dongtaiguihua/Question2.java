@@ -8,7 +8,38 @@ public class Question2 {
     /**
      * 偷东西 不能偷相邻的
      */
+    public static int rob(int[] nums) {
+        if (nums.length==0)return 0;
 
+        int f[] = new int[nums.length+1];
+        f[0] = 0;
+        f[1] = nums[0];
+        f[2] = nums[1];
+        for (int i = 3; i < f.length; i++) {
+            f[i] = nums[i-1] + Math.max(f[i-3],f[i-2]);
+        }
+
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i]>max)
+                max = nums[i];
+        }
+        return max;
+    }
+
+    public int method2(int [] A){
+        int n = A.length;
+        if (n == 0){
+            return 0;
+        }
+        int [] f = new int[n+1];
+        f[0] = 0;
+        f[1] = A[0];
+        for (int i = 2; i <= n; i++) {
+            f[i] = Math.max(f[i-1],f[i-1]+A[i-1]);
+        }
+        return 0;
+    }
 
     /**
      * 买股票，那一天卖出获得的利润最大

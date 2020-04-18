@@ -220,10 +220,62 @@ public class Question3 {
 //        System.out.println(mathodOne(10));
 //            method2("aa");
         //3个石子，先手必bai
-        System.out.println(method4(3));
+//        System.out.println(method4(3));
+//        mathodOne(25);
 
+        boolean b = true || false;
+        System.out.println(b);
+
+        /**
+         * 有一个必胜，那么他就必败，因为不会傻到故意让对方胜利。
+         */
         //
     }
+
+
+    public static int m(String ss){
+        char[] chars = ss.toCharArray();
+        int n = chars.length;
+        if (n == 0){
+            return 0;
+        }
+        boolean [][] isPalin = new boolean[n][n];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                isPalin[i][j] = false;
+            }
+        }
+        int i,j;
+        for (int t = 0; t < n; t++) {
+            i = j = t;
+            while (i >=0 && j<n && chars[i] == chars[j]){
+                isPalin[i][j] = true;
+                --i;
+                ++j;
+            }
+
+            i = t;
+            j = t+1;
+            while (i>=0&&j<n&&chars[i] == chars[j]){
+                isPalin[i][j] = true;
+                --i;
+                ++j;
+            }
+        }
+
+        int [] f = new int[n+1];
+        f[0] = 0;
+        for (int v = 1; v < n; v++) {
+            f[v] = Integer.MAX_VALUE;
+            for (int c = 0; c <= v; c++) {
+                if (isPalin[c][v-1]){
+                    f[v] = Math.min(f[c]+1,f[v]);
+                }
+            }
+        }
+        return 0;
+    }
+
 }
 
 
