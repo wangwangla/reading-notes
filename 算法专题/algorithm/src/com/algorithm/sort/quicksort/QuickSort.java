@@ -1,6 +1,9 @@
 package com.algorithm.sort.quicksort;
 
 import com.algorithm.sort.father.SortAbstr;
+import com.algorithm.sort.guibing.GuiBingSort;
+
+import java.util.Arrays;
 
 /**
  * 快速排序
@@ -34,7 +37,7 @@ public class QuickSort extends SortAbstr {
                     break;
                 }
             }
-            while((key.compareTo(a[--right]))>0){
+            while((key.compareTo(a[--right]))<0){
                 if (right<=start){
                     break;
                 }
@@ -46,7 +49,14 @@ public class QuickSort extends SortAbstr {
             }
         }
         //将定义标准的值进行交换
-        exch(a,start,left);
-        return left;
+        exch(a,start,right);
+        return right;
+    }
+
+    public static void main(String[] args) {
+        QuickSort guiBingSort = new QuickSort();
+        Integer [] arr={1,4,5,7,3,2};
+        guiBingSort.sort(arr);
+        System.out.printf("数组："+ Arrays.toString(arr));
     }
 }

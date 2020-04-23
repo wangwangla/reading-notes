@@ -1,11 +1,24 @@
 package com.designpatten.yuanxing.yuanxing.bean;
 
+import org.omg.CosNaming.IstringHelper;
+
+//如果需要该类 可以实现克隆的，就需要实现这个接口，然后实现相应的方法
 public class People implements Cloneable{
     private String name;
     private int age;
+    private MyString string;
 
-    public People(String name, int age) {
+    public MyString getString() {
+        return string;
+    }
+
+    public void setString(MyString string) {
+        this.string = string;
+    }
+
+    public People(String name, int age, MyString string) {
         this.name = name;
+        this.string = string;
         this.age = age;
     }
 
@@ -30,11 +43,16 @@ public class People implements Cloneable{
         return "People{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", string=" + string +
                 '}';
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public People clone() throws CloneNotSupportedException {
+        People people = null;
+        try {
+            people = (People) super.clone();
+        }catch (Exception e){}
+        return people;
     }
 }

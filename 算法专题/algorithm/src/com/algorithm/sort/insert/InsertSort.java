@@ -4,6 +4,8 @@ import com.algorithm.sort.father.SortAbstr;
 
 /**
  * 插入排序
+ * 1.从第二个数据开始，到最后一个位置
+ * 2.前面的为排序之后的，后面的未排序
  */
 public class InsertSort extends SortAbstr {
     public void sort(Comparable[] a){

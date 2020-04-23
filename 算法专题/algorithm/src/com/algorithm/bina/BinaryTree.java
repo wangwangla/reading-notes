@@ -4,6 +4,9 @@ import com.queue.Queue;
 
 /**
  * 二叉树
+ * 这个key是可以进行比较的，所有可以排序
+ * 二叉树
+ *  - key value left right
  * @param <Key>
  * @param <Value>
  */
@@ -31,6 +34,14 @@ public class BinaryTree<Key extends Comparable<Key>,Value> {
         root = put(root,key,value);
     }
 
+    /**
+     * 加入数据，从第一个开始 存储key 和value，根据key排序
+     * 不存在key就增加，存在就覆盖值
+     * @param x
+     * @param key
+     * @param value
+     * @return
+     */
     public Node put(Node x,Key key,Value value){
         if (x == null){
             N++;
@@ -78,7 +89,7 @@ public class BinaryTree<Key extends Comparable<Key>,Value> {
         int cmp = key.compareTo(root.key);
         if (cmp > 0){
             root.right = delete(root.right,key);
-        }else if  (cmp > 0){
+        }else if  (cmp < 0){
             root.left = delete(root.left,key);
         }else {
             //找到相等的值
@@ -91,33 +102,46 @@ public class BinaryTree<Key extends Comparable<Key>,Value> {
                 return root.right;
             }
 
+//            10    删除6      10
+//          /                 /
+//         6                 7       return minNode
+//        /\                /\
+//       3  8              3  8
+//      /\  /\             /\  /\
+//     2  47 9            2  4null 9   将这个置为空麻烦
+
+            //找出最小的值
+//            Node minNode = new Node(root.right.key,root.right.value,null,null);
             Node minNode = root.right;
+            Node preNode = root;
             while (minNode.left != null){
+                preNode = minNode;
                 minNode = minNode.left;
             }
-            Node n = root.right;
-            while (n.left!=null){
-                if (n.left.left==null){
-                    n.left = null;
-                }else {
-                    n = n.left;
-                }
+            Node node = new Node(minNode.key,minNode.value,null,null);
+            if (preNode.right.key == minNode.key){
+                preNode.right = null;
+            }else {
+                preNode.left = null;
             }
-            minNode.left = root.left;
-            minNode.right = root.right;
-            root = minNode;
+            //将哪个结点变为nul
+            node.left = root.left;
+            node.right = root.right;
+            root = node;
         }
         return root;
     }
 
     public static void main(String[] args) {
         BinaryTree<Integer,String> binaryTree = new BinaryTree<>();
-        binaryTree.put(1,"a");
-        binaryTree.put(2,"b");
-        binaryTree.put(3,"c");
-        binaryTree.put(4,"d");
+        binaryTree.put(5,"a");
+        binaryTree.put(3,"b");
+        binaryTree.put(4,"c");
+        binaryTree.put(2,"d");
+
+
         System.out.printf("输出："+binaryTree.size());
-        binaryTree.delete(2);
+        binaryTree.delete(3);
         System.out.println(binaryTree.size());
     }
 

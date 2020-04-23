@@ -4,6 +4,7 @@ import com.algorithm.sort.father.SortAbstr;
 
 /**
  * 选择排序
+ * 1.选择第一个值，一次向后，每次找出一个最值，将最值与第一个值交换
  */
 public class SelectSort extends SortAbstr {
     public static void sort(Comparable[] a){

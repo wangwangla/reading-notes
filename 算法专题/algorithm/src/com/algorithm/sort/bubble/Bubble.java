@@ -4,6 +4,11 @@ import com.algorithm.sort.father.SortAbstr;
 
 /**
  * 冒泡排序
+ * 1.冒泡排序的最大趟数为i = a.length-1
+ * 2.每趟比较的次数为i
+ *
+ * 比较的结构是最后一个值为最值
+ *
  */
 public class Bubble extends SortAbstr {
     /**

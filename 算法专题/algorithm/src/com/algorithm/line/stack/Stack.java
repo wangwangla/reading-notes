@@ -35,6 +35,7 @@ public class Stack<T> implements Iterable<T> {
             n=n.next;
             return n.item;
         }
+
     }
 
     private class Node{
@@ -119,4 +120,9 @@ public class Stack<T> implements Iterable<T> {
             return false;
         }
     }
+
+    public void play(){
+        forEach(t-> System.out.println(t));
+    }
+
 }

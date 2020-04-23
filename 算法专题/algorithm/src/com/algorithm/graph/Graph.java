@@ -27,12 +27,24 @@ public class Graph {
         return lineNum;
     }
 
-    public void addEage(int v,int w){
+    public void addEdge(int v,int w){
         queue[v].enqueue(w);
         queue[w].enqueue(v);
         lineNum++;
     }
     public Queue<Integer> getVer(int v){
         return queue[v];
+    }
+
+    public static void main(String[] args) {
+        Graph diGraph = new Graph(10);
+        diGraph.addEdge(0,1);
+        diGraph.addEdge(1,1);
+        diGraph.addEdge(4,1);
+        diGraph.addEdge(2,1);
+        diGraph.addEdge(6,1);
+        diGraph.addEdge(8,1);
+        DFS dfs = new DFS(diGraph,1);
+        dfs.dfs(diGraph,1);
     }
 }

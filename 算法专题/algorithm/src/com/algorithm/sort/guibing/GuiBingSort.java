@@ -6,6 +6,23 @@ import java.util.Arrays;
 
 /**
  * 归并排序
+ * 1.归并首先会开一个数组
+ * 2.将数据分半
+ * 1 4 5 7 3 2
+ *
+ * 1 4 5   7 3 2
+ *
+ * 1  4 5   7  3 2
+ *
+ * 1进入临时数组，复制到数组
+ * 4 5进入临时数组，复制到数组
+ * 7进入临时数组，复制到数组
+ * 3 2（排序 2 3）进入临时数组，复制到数组
+ * 1 4 5进入临时数组，复制到数组
+ * 7 3 2（2 3 7） 进入临时数组，复制到数组
+ * 1 4 5    2 3 7 进入临时数组，复制到数组
+ * 1 2 3 4 5 7
+ *
  */
 public class GuiBingSort extends SortAbstr {
     public void sort(int a[]){
@@ -51,7 +68,7 @@ public class GuiBingSort extends SortAbstr {
 
     public static void main(String[] args) {
         GuiBingSort guiBingSort = new GuiBingSort();
-        int [] arr={2,4,7,3,1};
+        int [] arr={1,4,5,7,3,2};
         guiBingSort.sort(arr);
         System.out.printf("数组："+ Arrays.toString(arr));
     }

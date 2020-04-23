@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51dea5fe-9e63-4590-b5e2-9477d50b9c46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../设计模式/韩顺平视频/4.原型模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../设计模式/韩顺平视频/4.原型模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java专题/java锁/2.volatile.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../java专题/java锁/2.volatile.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java专题/jvm/1.JVM组成.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../java专题/jvm/1.JVM组成.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java专题/泛型/1.泛型.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../java专题/泛型/1.泛型.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../设计模式/6.原型模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../设计模式/6.原型模式.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,34 +55,35 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/designpatten/yuanxing/yuanxing" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/designpatten/yuanxing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/designpatten/builder/improve" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.algorithm.sort" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.designpatten.factory.none.order" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\reading-notes\算法专题\algorithm\src\com\designpatten\builder\improve" />
+      <recent name="E:\reading-notes\算法专题\algorithm\src\com\designpatten\yuanxing\depth" />
+      <recent name="E:\reading-notes\算法专题\algorithm\src\com\designpatten\yuanxing\yuanxing" />
+      <recent name="E:\reading-notes\algorithm\src\com\designpatten\factory\simple" />
+      <recent name="E:\reading-notes\algorithm\src\com\designpatten\factory\method" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\reading-notes\算法专题\algorithm\src\com\designpatten\yuanxing\yuanxing" />
-      <recent name="E:\reading-notes\algorithm\src\com\designpatten\factory\simple" />
-      <recent name="E:\reading-notes\algorithm\src\com\designpatten\factory\method" />
-      <recent name="E:\reading-notes\algorithm\src\com\algorithm\sort\father" />
-      <recent name="E:\reading-notes\algorithm\src\com\algorithm\sort" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.designpatten.factory.none.order" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Demo05">
-    <configuration name="Demo05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.Demo05" />
+  <component name="RunManager" selected="Application.Demo01">
+    <configuration name="BinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.algorithm.bina.BinaryTree" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.*" />
+          <option name="PATTERN" value="com.algorithm.bina.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainApp (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.designpatten.yuanxing.chuantong.MainApp" />
+    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.Demo01" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.designpatten.yuanxing.chuantong.*" />
+          <option name="PATTERN" value="com.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainApp (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.designpatten.yuanxing.yuanxing.bean.MainApp" />
+    <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.algorithm.graph.Graph" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.designpatten.yuanxing.yuanxing.bean.*" />
+          <option name="PATTERN" value="com.algorithm.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.designpatten.obser.client.MainApp" />
+    <configuration name="GuiBingSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.algorithm.sort.guibing.GuiBingSort" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.designpatten.obser.client.*" />
+          <option name="PATTERN" value="com.algorithm.sort.guibing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Question3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.algorithm.dongtaiguihua.Question3" />
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.algorithm.sort.quicksort.QuickSort" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.algorithm.dongtaiguihua.*" />
+          <option name="PATTERN" value="com.algorithm.sort.quicksort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Demo05" />
-        <item itemvalue="Application.MainApp (2)" />
-        <item itemvalue="Application.MainApp (1)" />
-        <item itemvalue="Application.MainApp" />
-        <item itemvalue="Application.Question3" />
+        <item itemvalue="Application.Demo01" />
+        <item itemvalue="Application.Graph" />
+        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.GuiBingSort" />
+        <item itemvalue="Application.BinaryTree" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +226,10 @@
       <workItem from="1586954675024" duration="1933000" />
       <workItem from="1586961425010" duration="20000" />
       <workItem from="1586961480703" duration="18841000" />
-      <workItem from="1587211838977" duration="4324000" />
+      <workItem from="1587211838977" duration="17465000" />
+      <workItem from="1587472026431" duration="2759000" />
+      <workItem from="1587479296668" duration="12400000" />
+      <workItem from="1587651600311" duration="3160000" />
     </task>
     <servers />
   </component>
@@ -238,10 +245,14 @@
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state x="589" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1707.1027@0.0.1707.1027" timestamp="1585142839111" />
-    <state x="0" y="414" key="#com.intellij.ide.util.MemberChooser" timestamp="1587212160877">
+    <state x="0" y="414" key="#com.intellij.ide.util.MemberChooser" timestamp="1587392643280">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="0" y="414" key="#com.intellij.ide.util.MemberChooser/0.0.1707.1027@0.0.1707.1027" timestamp="1587212160877" />
+    <state x="0" y="414" key="#com.intellij.ide.util.MemberChooser/0.0.1707.1027@0.0.1707.1027" timestamp="1587392643280" />
+    <state x="665" y="442" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587392578202">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="665" y="442" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1587392578202" />
     <state x="643" y="403" width="421" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586875522619">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
@@ -250,42 +261,42 @@
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state x="634" y="272" key="FileChooserDialogImpl/0.0.1707.1027@0.0.1707.1027" timestamp="1587174403433" />
-    <state width="1663" height="259" key="GridCell.Tab.0.bottom" timestamp="1587218756348">
+    <state width="1663" height="230" key="GridCell.Tab.0.bottom" timestamp="1587656078031">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state width="1420" height="227" key="GridCell.Tab.0.bottom/0.0.1463.874@0.0.1463.874" timestamp="1582961126202" />
-    <state width="1663" height="259" key="GridCell.Tab.0.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1587218756348" />
-    <state width="1663" height="259" key="GridCell.Tab.0.center" timestamp="1587218756348">
+    <state width="1663" height="230" key="GridCell.Tab.0.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1587656078031" />
+    <state width="1663" height="230" key="GridCell.Tab.0.center" timestamp="1587656078031">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state width="1420" height="227" key="GridCell.Tab.0.center/0.0.1463.874@0.0.1463.874" timestamp="1582961126202" />
-    <state width="1663" height="259" key="GridCell.Tab.0.center/0.0.1707.1027@0.0.1707.1027" timestamp="1587218756348" />
-    <state width="1663" height="259" key="GridCell.Tab.0.left" timestamp="1587218756348">
+    <state width="1663" height="230" key="GridCell.Tab.0.center/0.0.1707.1027@0.0.1707.1027" timestamp="1587656078031" />
+    <state width="1663" height="230" key="GridCell.Tab.0.left" timestamp="1587656078031">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state width="1420" height="227" key="GridCell.Tab.0.left/0.0.1463.874@0.0.1463.874" timestamp="1582961126202" />
-    <state width="1663" height="259" key="GridCell.Tab.0.left/0.0.1707.1027@0.0.1707.1027" timestamp="1587218756348" />
-    <state width="1663" height="259" key="GridCell.Tab.0.right" timestamp="1587218756348">
+    <state width="1663" height="230" key="GridCell.Tab.0.left/0.0.1707.1027@0.0.1707.1027" timestamp="1587656078031" />
+    <state width="1663" height="230" key="GridCell.Tab.0.right" timestamp="1587656078031">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state width="1420" height="227" key="GridCell.Tab.0.right/0.0.1463.874@0.0.1463.874" timestamp="1582961126202" />
-    <state width="1663" height="259" key="GridCell.Tab.0.right/0.0.1707.1027@0.0.1707.1027" timestamp="1587218756348" />
-    <state width="1663" height="2" key="GridCell.Tab.1.bottom" timestamp="1587182275622">
+    <state width="1663" height="230" key="GridCell.Tab.0.right/0.0.1707.1027@0.0.1707.1027" timestamp="1587656078031" />
+    <state width="1663" height="360" key="GridCell.Tab.1.bottom" timestamp="1587656078016">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state width="1663" height="2" key="GridCell.Tab.1.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1587182275622" />
-    <state width="1663" height="2" key="GridCell.Tab.1.center" timestamp="1587182275621">
+    <state width="1663" height="360" key="GridCell.Tab.1.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1587656078016" />
+    <state width="1663" height="360" key="GridCell.Tab.1.center" timestamp="1587656078016">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state width="1663" height="2" key="GridCell.Tab.1.center/0.0.1707.1027@0.0.1707.1027" timestamp="1587182275621" />
-    <state width="1663" height="2" key="GridCell.Tab.1.left" timestamp="1587182275621">
+    <state width="1663" height="360" key="GridCell.Tab.1.center/0.0.1707.1027@0.0.1707.1027" timestamp="1587656078016" />
+    <state width="1663" height="360" key="GridCell.Tab.1.left" timestamp="1587656078016">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state width="1663" height="2" key="GridCell.Tab.1.left/0.0.1707.1027@0.0.1707.1027" timestamp="1587182275621" />
-    <state width="1663" height="2" key="GridCell.Tab.1.right" timestamp="1587182275621">
+    <state width="1663" height="360" key="GridCell.Tab.1.left/0.0.1707.1027@0.0.1707.1027" timestamp="1587656078016" />
+    <state width="1663" height="360" key="GridCell.Tab.1.right" timestamp="1587656078016">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state width="1663" height="2" key="GridCell.Tab.1.right/0.0.1707.1027@0.0.1707.1027" timestamp="1587182275621" />
+    <state width="1663" height="360" key="GridCell.Tab.1.right/0.0.1707.1027@0.0.1707.1027" timestamp="1587656078016" />
     <state x="357" y="268" key="NewModule_or_Project.wizard" timestamp="1586667797766">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
@@ -299,11 +310,15 @@
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1707.1027@0.0.1707.1027" timestamp="1585181908039" />
-    <state x="483" y="307" key="com.intellij.ide.util.TipDialog" timestamp="1586962568497">
+    <state x="652" y="294" key="chooseDestDirectoryDialog" timestamp="1587340608055">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="652" y="294" key="chooseDestDirectoryDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1587340608055" />
+    <state x="483" y="307" key="com.intellij.ide.util.TipDialog" timestamp="1587651701250">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state x="414" y="261" key="com.intellij.ide.util.TipDialog/0.0.1463.874@0.0.1463.874" timestamp="1582120635420" />
-    <state x="483" y="307" key="com.intellij.ide.util.TipDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1586962568497" />
+    <state x="483" y="307" key="com.intellij.ide.util.TipDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1587651701250" />
     <state x="935" y="438" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583650460557">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
@@ -312,23 +327,23 @@
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state x="86" y="293" width="1521" height="841" key="dock-window-1/0.0.1707.1027@0.0.1707.1027" timestamp="1584023399001" />
-    <state x="241" y="130" key="new project wizard" timestamp="1587182272224">
+    <state x="241" y="130" key="new project wizard" timestamp="1587645384405">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="241" y="130" key="new project wizard/0.0.1707.1027@0.0.1707.1027" timestamp="1587182272224" />
+    <state x="241" y="130" key="new project wizard/0.0.1707.1027@0.0.1707.1027" timestamp="1587645384405" />
     <state x="558" y="146" key="refactoring.ChangeSignatureDialog" timestamp="1586666681283">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state x="558" y="146" key="refactoring.ChangeSignatureDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1586666681283" />
-    <state x="257" y="224" key="run.anything.popup" timestamp="1585738652065">
+    <state x="257" y="224" key="run.anything.popup" timestamp="1587392611497">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state x="220" y="191" key="run.anything.popup/0.0.1463.874@0.0.1463.874" timestamp="1581856058456" />
-    <state x="257" y="224" key="run.anything.popup/0.0.1707.1027@0.0.1707.1027" timestamp="1585738652065" />
-    <state x="579" y="347" width="672" height="678" key="search.everywhere.popup" timestamp="1587042645783">
+    <state x="257" y="224" key="run.anything.popup/0.0.1707.1027@0.0.1707.1027" timestamp="1587392611495" />
+    <state x="579" y="347" width="672" height="678" key="search.everywhere.popup" timestamp="1587653549266">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="579" y="347" width="672" height="678" key="search.everywhere.popup/0.0.1707.1027@0.0.1707.1027" timestamp="1587042645783" />
+    <state x="579" y="347" width="672" height="678" key="search.everywhere.popup/0.0.1707.1027@0.0.1707.1027" timestamp="1587653549266" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -354,44 +369,9 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/guibing/GuiBingSort.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/guibing/GuiBingSort.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/algorithm/line/stack/Stack.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/algorithm/bina/BinaryTree.java</url>
-          <line>120</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/algorithm/bina/BinaryTree.java</url>
           <line>86</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/algorithm/bina/BinaryTree.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/guibing/GuiBingSort.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/guibing/GuiBingSort.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="25" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/algorithmfuxi/stack/Stack.java</url>
@@ -588,8 +568,95 @@
           <line>36</line>
           <option name="timeStamp" value="100" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/test/Demo07.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/bina/BinaryTree.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/guibing/GuiBingSort.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/guibing/GuiBingSort.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/guibing/GuiBingSort.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/quicksort/QuickSort.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/quicksort/QuickSort.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/quicksort/QuickSort.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/quicksort/QuickSort.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/sort/quicksort/QuickSort.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/graph/DFS.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/graph/DFS.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/algorithm/graph/DFS.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/queue/Queue.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/queue/Queue.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/demo/Demo01.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="classLoader1.getParent().getParent()" language="JAVA" />
+        <watch expression="root" language="JAVA" />
+        <watch expression="a" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/algorithm$Stack.ic" NAME="Stack Coverage Results" MODIFIED="1584795228883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
