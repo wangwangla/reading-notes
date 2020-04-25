@@ -90,6 +90,7 @@ public class Question3 {
         int f[] = new int[n+1];
         f[0] = 0;
         for (int i1 = 1; i1 <= n; i1++) {
+
             for (int i2 = 0; i2 <= i1; i2++) {
                 if (f[i2]+1<f[i1]&&isPalin[i1][i2] == true){
                     f[i1] = f[i2]+1;
