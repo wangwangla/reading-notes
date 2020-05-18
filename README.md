@@ -31,7 +31,7 @@
 idea激活方法
 server
 
-http://jetbrains-license-server
+https://fls.jetbrains-agent.com
 
 
 ## 需要做什么
