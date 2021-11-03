@@ -3,7 +3,61 @@
 
 说的太多，想的太多，唯独做的太少
 
+## 翻译
+
+翻译：opengles2.0guide ，准确说不能叫翻译，使用软件翻译过来的，然后自己看一便
+
+## 每天做什么
+
+后来法线没必要天天写
+
+## 设计模式
+
+常见的设计模式
+
+## 算法专题
+
+- 数据结构中常见的算法类型
+
+## 物理和数学
+
+游戏物理中有需要的基础知识
+
+## android知识
+
+android经常用到的知识
+
+## box2d
+
+- 源码学习
+- 两个box2d游戏案例
+  - 打砖块
+  - 小车
+
+## gradle
+
+gradle在构建过程中的一些基础知识
+
+## java编程思想
+
+随后安排
+
+## java专题
+
+java相关知识，包括jvm等
+
+## 重构
+
+重构书籍阅读
+
+## web知识
+
+可能会放弃，以后应该会考虑做游戏
+
+
+
 ## Effective java
+
 - [1.静态工厂代替构造函数](https://github.com/wangwangla/reading-notes/blob/master/effective%20java/doc/1.%E4%BD%BF%E7%94%A8%E9%9D%99%E6%80%81%E5%B7%A5%E5%8E%82%E6%9B%BF%E4%BB%A3%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0.md)
 - [2.构造函数参数过多使用bilder进行](https://github.com/wangwangla/reading-notes/blob/master/effective%20java/doc/2.%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E8%BF%87%E5%A4%9A%E4%BD%BF%E7%94%A8bilder%E8%BF%9B%E8%A1%8C.md)
 - [3.私有构造函数和枚举实现单例](https://github.com/wangwangla/reading-notes/blob/master/effective%20java/doc/3.%E7%A7%81%E6%9C%89%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8C%E6%9E%9A%E4%B8%BE%E5%AE%9E%E7%8E%B0%E5%8D%95%E4%BE%8B.md)
@@ -33,24 +87,11 @@ server
 
 https://fls.jetbrains-agent.com
 
-
 ## 需要做什么
 
 - 每天算法数10页
 - 游戏编程10页
 - 源码分析1个
 - 重构10页
-- effect java一个
+- effect java一个（两天）
 - gradle for android ten page
-
-## plain
-
-### 动态规划
-
-### 字典树
-
-### 图
-
-## 任务
-
-5月11~3月18  贪心算法
