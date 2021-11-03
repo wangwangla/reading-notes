@@ -80,13 +80,6 @@ java相关知识，包括jvm等
 - [10.返回键](https://github.com/wangwangla/reading-notes/blob/master/word%20stacks%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/10.%E8%BF%94%E5%9B%9E%E9%94%AE.md)
 -  [11.Baseen](https://github.com/wangwangla/reading-notes/blob/master/word%20stacks%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/11.BaseScreen.md)
 
-
-
-idea激活方法
-server
-
-https://fls.jetbrains-agent.com
-
 ## 需要做什么
 
 - 每天算法数10页
