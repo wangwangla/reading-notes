@@ -3,8 +3,39 @@
 gradle是一个构建系统系统工具，他的DSL基于Groovy实现， 可以很方便的进行系统的构建，它通过插件的方式进行构建，如果不能达到要求，也可以自己构建插件。
 执行的时候会默认的加载build.gradle，
 
+## 配置环境
+
+安装java  配置JAVA_HOME
+
+<img src="android-1.第一章.assets/image-20211104212736421.png" alt="image-20211104212736421" style="zoom:33%;" />
+
+
+
+## HelloWorld
+
 ```java
+//创建一个任务，目标打印出helloworld
+
+tasks.register('hello') {
+    doLast {
+        println 'Hello world!'
+    }
+}
+
+task wang{
+    doLast{
+        println "旺哥"
+    }
+}
+
+tasks.register('HelloWorld') {
+    doLast {
+        println 'Hello world!'
+    }
+}
 ```
+
+
 
 ## wrapper
 
@@ -37,15 +68,27 @@ distributionUrl : Gradle发行版压缩包的下载地址
 all和bin的区别?
 > all是将所有的东西都下载了，比如说文档还有各类资源，源码。
 
+
+
+使用脚本生成我们需要的gradle版本
+
+```java
+gradle wrapper
+```
+
+
+
 ## 我们使用Task指定版本
 
-我们在build中，
+我们在build中，我们生成的配置文件，是通过gradle生成的，那么我们可以通过任务的参数配置来配置它们。
 
 ```java
 Task wrapper(type:Wrapper){
     gradleVerion = '2.4'
 }
 ```
+
+
 
 ## 其他
 

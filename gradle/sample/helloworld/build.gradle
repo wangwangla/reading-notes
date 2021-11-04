@@ -1,0 +1,19 @@
+//创建一个任务，目标打印出helloworld
+
+tasks.register('hello') {
+    doLast {
+        println 'Hello world!'
+    }
+}
+
+task wang{
+    doLast{
+        println "旺哥"
+    }
+}
+
+tasks.register('HelloWorld') {
+    doLast {
+        println 'Hello world!'
+    }
+}
