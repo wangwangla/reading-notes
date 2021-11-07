@@ -27,6 +27,10 @@
 
 android经常用到的知识
 
+- 
+
+
+
 ## box2d
 
 - 源码学习
@@ -37,6 +41,14 @@ android经常用到的知识
 ## gradle
 
 gradle在构建过程中的一些基础知识
+
+- android-1.第一章 Gradle入门
+- android-2.第二章 Groovy基础
+- android-3.第三章 构建基础入门
+- android-4.第四章 Gradle任务
+- android-5.第五章 插件
+- android-6.第六章 java插件
+- android-7.第七章 android gradle插件
 
 ## java编程思想
 
