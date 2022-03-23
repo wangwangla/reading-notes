@@ -45,9 +45,7 @@ class BossGroup implements Runnable{
             while (iterator!=null){
                 SelectionKey next = iterator.next();
                 if (next.isReadable()) {
-
-                }else if (next.isReadable()){
-
+                    new DefaultGroup(next);
                 }
             }
         }
