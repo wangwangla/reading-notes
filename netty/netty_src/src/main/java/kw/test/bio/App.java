@@ -11,9 +11,12 @@ public class App {
     public static void main(String[] args) {
         try {
             ServerSocket socket = new ServerSocket(8888);
-            Socket accept = socket.accept();
-            //每个连接通过一个线程进行处理
-            new Thread(new AcceptHandler(accept)).start();
+            while (true) {
+                System.out.println("run accept");
+                Socket accept = socket.accept();
+                //每个连接通过一个线程进行处理
+                new Thread(new AcceptHandler(accept)).start();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -41,10 +44,16 @@ class AcceptHandler implements Runnable {
                 if (body == null){
                     break;
                 }
-                System.out.println("the time ");
-                current = "";
+                if (body.equals("exit")){
+                    System.out.println("channel 关闭");
+                    break;
+                }
+                System.out.println("the msg "+ body);
+                current = "revive "+ socket.getInetAddress()+"  msg "+body;
                 out.println(current);
+                System.out.println(socket);
             }
+
         }catch (Exception e){
 
         }

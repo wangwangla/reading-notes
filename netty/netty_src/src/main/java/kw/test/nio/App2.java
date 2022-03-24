@@ -8,7 +8,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 
 public class App2 {
-
     public static void main(String[] args) {
         ThreadPoolExecutor bossgroup  = (ThreadPoolExecutor) Executors.newSingleThreadExecutor();
         try (
