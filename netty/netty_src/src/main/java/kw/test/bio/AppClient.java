@@ -20,8 +20,6 @@ public class AppClient {
             char [] arr = new char[30];
             in.read(arr);
             System.out.println(String.copyValueOf(arr));
-            out.println("exit");
-            out.flush();
             in.read(arr);
             System.out.println(String.copyValueOf(arr));
             System.in.read();

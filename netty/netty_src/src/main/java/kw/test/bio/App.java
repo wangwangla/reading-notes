@@ -1,5 +1,8 @@
 package kw.test.bio;
 
+import kw.test.log.KLog;
+import kw.test.log.NettyLog;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,10 +12,13 @@ import java.net.Socket;
 
 public class App {
     public static void main(String[] args) {
+        new NettyLog();
         try {
+            KLog.info("server port", "8888");
             ServerSocket socket = new ServerSocket(8888);
+            KLog.info("server bind","success");
             while (true) {
-                System.out.println("run accept");
+                KLog.info("server","accept");
                 Socket accept = socket.accept();
                 //每个连接通过一个线程进行处理
                 new Thread(new AcceptHandler(accept)).start();
@@ -28,6 +34,7 @@ class AcceptHandler implements Runnable {
     private Socket socket;
     public AcceptHandler(Socket socket){
         this.socket = socket;
+        KLog.info("handler ","socket connect!!!");
     }
 
     @Override
@@ -40,18 +47,18 @@ class AcceptHandler implements Runnable {
             String current = null;
             String body = null;
             while (true){
+                KLog.info("wait read"," wait msg");
                 body = in.readLine();
                 if (body == null){
                     break;
                 }
                 if (body.equals("exit")){
-                    System.out.println("channel 关闭");
+                    KLog.info("exit","channel 关闭");
                     break;
                 }
-                System.out.println("the msg "+ body);
+                KLog.info("the msg ", body);
                 current = "revive "+ socket.getInetAddress()+"  msg "+body;
                 out.println(current);
-                System.out.println(socket);
             }
 
         }catch (Exception e){
