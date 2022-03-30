@@ -2,11 +2,14 @@ package kw.test.netty.c2;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import io.netty.handler.codec.DelimiterBasedFrameDecoder;
+import io.netty.handler.codec.FixedLengthFrameDecoder;
 import io.netty.handler.codec.string.StringDecoder;
 
 import kw.test.log.KLog;
@@ -53,13 +56,15 @@ public class TcpNianBao {
         @Override
         protected void initChannel(NioSocketChannel ch) throws Exception {
             KLog.info("server init","connect");
+//            ch.pipeline().addLast(new FixedLengthFrameDecoder(8));
+            ch.pipeline().addLast(new DelimiterBasedFrameDecoder(1024, Unpooled.copiedBuffer("_".getBytes())));
             ch.pipeline().addLast(new StringDecoder());
+
             ch.pipeline().addLast(new TimerHandler1());
             ch.pipeline().addLast(new ChannelOutboundHandlerAdapter(){
                 @Override
                 public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
                     super.write(ctx, msg, promise);
-                    System.out.println("---------------------------------");
                     ByteBuf buffer = ctx.alloc().buffer();
                     buffer.writeBytes("iisiiis".getBytes());
                     ctx.writeAndFlush(buffer);
@@ -68,14 +73,15 @@ public class TcpNianBao {
         }
     }
 
-    class TimerHandler1 extends SimpleChannelInboundHandler {
 
+    class TimerHandler1 extends SimpleChannelInboundHandler {
+        int count = 0;
 
         @Override
         protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
             System.out.println(msg);
             ctx.writeAndFlush("buffer");
-            System.out.println("------------------------------------");
+            System.out.println("------------------------------------"+count++);
 //        System.out.println("------------------------------msg");
 //        ByteBuf byteBuf = (ByteBuf) msg;
 //        byte[] bytes = new byte[byteBuf.readableBytes()];

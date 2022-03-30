@@ -6,6 +6,7 @@ import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoop;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import io.netty.handler.codec.FixedLengthFrameDecoder;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import kw.test.log.KLog;
@@ -24,21 +25,13 @@ public class TcpClient {
         try {
             connect = new Bootstrap().group(eventLoopGroup)
                     .channel(NioSocketChannel.class)
+
                     .handler(new ChannelInitializer<Channel>() {
                         @Override
                         protected void initChannel(Channel ch) throws Exception {
                             KLog.info("client init","connect");
                             ch.pipeline().addLast(new StringEncoder());
                             ch.pipeline().addLast(new ChannelInboundHandlerAdapter(){
-//                                @Override
-//                                protected void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-//                                    super.channelRead(ctx, msg);
-//                                    ByteBuf buf = (ByteBuf)msg;
-////                                    byte b = buf.readByte();
-//                                    System.out.println("----------------------");
-//                                    log(buf);
-//                                }
-
 
                                 @Override
                                 public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
@@ -51,7 +44,10 @@ public class TcpClient {
                                     super.channelRead(ctx, msg);
                                     ByteBuf buf = (ByteBuf)msg;
 //                                    byte b = buf.readByte();
-                                    System.out.println("----------------------");
+                                    for (int i = 0; i < 100; i++) {
+                                        System.out.println("----------------------");
+                                    }
+
                                     log(buf);
                                 }
 
@@ -60,8 +56,11 @@ public class TcpClient {
                                 @Override
                                 public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
                                     super.write(ctx, msg, promise);
+
                                     System.out.println("---------------------");
-                                    ctx.writeAndFlush("xxxxxxxxxxxxxxxxxxxx");
+                                    for (int i = 0; i < 100; i++) {
+                                        ctx.writeAndFlush("xxxxxxxxxxxxxxxxxxxx_\n");
+                                    }
                                 }
                             });
 

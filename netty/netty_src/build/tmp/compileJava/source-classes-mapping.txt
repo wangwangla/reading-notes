@@ -13,11 +13,8 @@ kw/test/netty/c3/SpiltAndLengthDecor.java
 kw/test/bio/App.java
  kw.test.bio.AcceptHandler
  kw.test.bio.App
-kw/test/netty/c2/TcpClient.java
- kw.test.netty.c2.TcpClient
- kw.test.netty.c2.TcpClient$1
- kw.test.netty.c2.TcpClient$1$1
- kw.test.netty.c2.TcpClient$1$2
+kw/test/aio/App.java
+ kw.test.aio.App
 kw/test/nio/App.java
  kw.test.nio.App
 kw/test/wbio/Wbio.java
@@ -35,8 +32,11 @@ kw/test/log/NettyLog.java
  kw.test.log.NettyLog
 kw/test/ByteBufferUtil.java
  kw.test.ByteBufferUtil
-kw/test/aio/App.java
- kw.test.aio.App
+kw/test/netty/c2/TcpClient.java
+ kw.test.netty.c2.TcpClient
+ kw.test.netty.c2.TcpClient$1
+ kw.test.netty.c2.TcpClient$1$1
+ kw.test.netty.c2.TcpClient$1$2
 kw/test/netty/c2/TcpNianBao.java
  kw.test.netty.c2.Handler1
  kw.test.netty.c2.Handler1$1
