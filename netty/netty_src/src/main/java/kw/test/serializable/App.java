@@ -19,7 +19,7 @@ import java.io.*;
  *
  */
 public class App {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         People people = new People();
         people.setAge(10);
         people.setName("wangwang");
@@ -30,5 +30,11 @@ public class App {
         os.flush();
         os.close();
         bos.close();
+
+        FileInputStream fis = new FileInputStream(new File("tsx"));
+        ObjectInputStream ois = new ObjectInputStream(fis);
+        People o = (People) ois.readObject();
+        System.out.println(o);
+
     }
 }

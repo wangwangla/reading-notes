@@ -27,11 +27,21 @@ public class Clent01 {
                         protected void initChannel(Channel ch) throws Exception {
                             KLog.info("client init","connect");
                             ch.pipeline().addLast(new StringEncoder());
+                            ch.pipeline().addLast(new StringDecoder());
+                            ch.pipeline().addLast(new ChannelOutboundHandlerAdapter(){
+                                @Override
+                                public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
+                                    super.write(ctx, msg, promise);
+                                    System.out.println(msg);
+                                }
+                            });
+
                             ch.pipeline().addLast(new ChannelInboundHandlerAdapter(){
                                 @Override
                                 public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
                                     super.channelRead(ctx, msg);
                                     System.out.println(msg);
+                                    ctx.writeAndFlush("baibai");
                                 }
                             });
                         }
