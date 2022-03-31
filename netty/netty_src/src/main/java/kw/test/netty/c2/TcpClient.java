@@ -34,6 +34,12 @@ public class TcpClient {
                             ch.pipeline().addLast(new ChannelInboundHandlerAdapter(){
 
                                 @Override
+                                public void channelActive(ChannelHandlerContext ctx) throws Exception {
+                                    super.channelActive(ctx);
+                                    //开始就执行的
+                                }
+
+                                @Override
                                 public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
                                     super.exceptionCaught(ctx, cause);
                                     System.out.println("----------shshhhh");
