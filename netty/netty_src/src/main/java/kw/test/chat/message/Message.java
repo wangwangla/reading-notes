@@ -8,6 +8,10 @@ public abstract class Message implements Serializable {
     private int sequenceId;
     private int messageType;
 
+    public int getSequenceId() {
+        return sequenceId;
+    }
+
     public abstract int getMessageType();
 
 
@@ -33,8 +37,9 @@ public abstract class Message implements Serializable {
     //相应
     public static final int  RPC_MESSAGE_TYPE_RESPONSE = 102;
 
-    static {
+    private static final Map<Integer, Class<? extends Message>> messageClasses = new HashMap<>();
 
+    static {
         messageClasses.put(LoginRequestMessage, LoginRequestMessage.class);
         messageClasses.put(LoginResponseMessage, LoginResponseMessage.class);
         messageClasses.put(ChatRequestMessage, ChatRequestMessage.class);
@@ -52,8 +57,6 @@ public abstract class Message implements Serializable {
         messageClasses.put(RPC_MESSAGE_TYPE_REQUEST, RpcRequestMessage.class);
         messageClasses.put(RPC_MESSAGE_TYPE_RESPONSE, RpcResponseMessage.class);
     }
-
-    private static final Map<Integer, Class<? extends Message>> messageClasses = new HashMap<>();
 
     public static Class<? extends Message> getMessageClass(int messageType){
         return messageClasses.get(messageType);
