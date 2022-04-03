@@ -6,6 +6,7 @@ import kw.test.chat.message.LoginRequestMessage;
 import kw.test.chat.message.LoginResponseMessage;
 import kw.test.chat.service.UserService;
 import kw.test.chat.service.UserServiceFactory;
+import kw.test.chat.session.SessionFactory;
 
 public class LoginRequestMessageHandler extends SimpleChannelInboundHandler<LoginRequestMessage> {
 
@@ -17,7 +18,11 @@ public class LoginRequestMessageHandler extends SimpleChannelInboundHandler<Logi
         boolean login = userService.login(username, password);
         LoginResponseMessage message;
         if (login){
-See
+            SessionFactory.getSession().bind(ctx.channel(),username);
+            message =new LoginResponseMessage(true,"成功！");
+        }else {
+            message = new LoginResponseMessage(false,"失败！");
         }
+        ctx.writeAndFlush(message);
     }
 }
