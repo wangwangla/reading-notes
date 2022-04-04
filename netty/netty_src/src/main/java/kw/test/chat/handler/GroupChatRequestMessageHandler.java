@@ -3,10 +3,9 @@ package kw.test.chat.handler;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import kw.test.chat.message.Group;
 import kw.test.chat.message.GroupChatRequestMessage;
 import kw.test.chat.message.GroupChatResponseMessage;
-import kw.test.chat.message.GroupSessionFactory;
+import kw.test.chat.session.GroupSessionFactory;
 
 import java.util.List;
 

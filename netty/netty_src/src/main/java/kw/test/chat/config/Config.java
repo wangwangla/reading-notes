@@ -1,4 +1,4 @@
-package kw.test.chat.message;
+package kw.test.chat.config;
 
 import kw.test.chat.protocol.Serializer;
 

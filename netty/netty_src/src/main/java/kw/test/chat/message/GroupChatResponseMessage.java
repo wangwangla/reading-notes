@@ -18,6 +18,14 @@ public class GroupChatResponseMessage extends AbstractResponseMessage {
     }
 
     @Override
+    public String toString() {
+        return "GroupChatResponseMessage{" +
+                "from='" + from + '\'' +
+                ", content='" + content + '\'' +
+                '}';
+    }
+
+    @Override
     public int getMessageType() {
         return GroupChatResponseMessage;
     }

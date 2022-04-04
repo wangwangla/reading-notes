@@ -7,7 +7,7 @@ import kw.test.chat.session.SessionFactory;
 public class QuitHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
-//        super.channelInactive(ctx);
+        super.channelInactive(ctx);
         SessionFactory.getSession().unbind(ctx.channel());
         System.out.println(" disconnect ！");
     }

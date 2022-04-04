@@ -1,8 +1,8 @@
 package kw.test.chat.message;
 
-public class RpcRequestMessage extends Message {
+public class PongMessage extends Message {
     @Override
     public int getMessageType() {
-        return 0;
+        return PongMessage;
     }
 }

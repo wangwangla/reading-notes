@@ -22,4 +22,12 @@ public class GroupQuitRequestMessage extends Message {
     public int getMessageType() {
         return GroupQuitRequestMessage;
     }
+
+    @Override
+    public String toString() {
+        return "GroupQuitRequestMessage{" +
+                "groupName='" + groupName + '\'' +
+                ", userName='" + userName + '\'' +
+                '}';
+    }
 }

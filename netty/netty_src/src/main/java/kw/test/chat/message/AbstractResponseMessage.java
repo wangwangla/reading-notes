@@ -12,8 +12,21 @@ public class AbstractResponseMessage extends Message{
         this.reason = reason;
     }
 
+    public boolean isSuccess() {
+        return success;
+    }
+
+
     @Override
     public int getMessageType() {
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "AbstractResponseMessage{" +
+                "success=" + success +
+                ", reason='" + reason + '\'' +
+                '}';
     }
 }

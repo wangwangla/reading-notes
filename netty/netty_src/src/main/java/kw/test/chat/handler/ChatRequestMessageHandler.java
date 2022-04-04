@@ -1,12 +1,14 @@
 package kw.test.chat.handler;
 
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import kw.test.chat.message.ChatRequestMessage;
 import kw.test.chat.message.ChatResponseMessage;
 import kw.test.chat.session.SessionFactory;
 
+@ChannelHandler.Sharable
 public class ChatRequestMessageHandler extends SimpleChannelInboundHandler<ChatRequestMessage> {
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, ChatRequestMessage msg) throws Exception {

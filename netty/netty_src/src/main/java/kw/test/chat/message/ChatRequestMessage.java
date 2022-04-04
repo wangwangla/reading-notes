@@ -39,4 +39,13 @@ public class ChatRequestMessage extends Message {
     public int getMessageType() {
         return ChatRequestMessage;
     }
+
+    @Override
+    public String toString() {
+        return "ChatRequestMessage{" +
+                "content='" + content + '\'' +
+                ", to='" + to + '\'' +
+                ", from='" + from + '\'' +
+                '}';
+    }
 }

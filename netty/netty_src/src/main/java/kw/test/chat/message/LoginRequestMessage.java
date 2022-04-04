@@ -23,4 +23,12 @@ public class LoginRequestMessage extends Message {
     public int getMessageType() {
         return LoginRequestMessage;
     }
+
+    @Override
+    public String toString() {
+        return "LoginRequestMessage{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }

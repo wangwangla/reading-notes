@@ -1,4 +1,4 @@
-package kw.test.chat.message;
+package kw.test.chat.session;
 
 import kw.test.chat.handler.GroupSession;
 

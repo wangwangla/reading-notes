@@ -2,10 +2,10 @@ package kw.test.chat.handler;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import kw.test.chat.message.Group;
+import kw.test.chat.session.Group;
 import kw.test.chat.message.GroupJoinResponseMessage;
 import kw.test.chat.message.GroupQuitRequestMessage;
-import kw.test.chat.message.GroupSessionFactory;
+import kw.test.chat.session.GroupSessionFactory;
 
 public class GroupQuitRequestMessageHandler extends SimpleChannelInboundHandler<GroupQuitRequestMessage> {
     @Override

@@ -1,16 +1,18 @@
 package kw.test.chat.handler;
 
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import kw.test.chat.message.Group;
+import kw.test.chat.session.Group;
 import kw.test.chat.message.GroupCreateRequestMessage;
 import kw.test.chat.message.GroupCreateResponseMessage;
-import kw.test.chat.message.GroupSessionFactory;
+import kw.test.chat.session.GroupSessionFactory;
 
 import java.util.List;
 import java.util.Set;
 
+@ChannelHandler.Sharable
 public class GroupCreateRequestMessageHandler extends SimpleChannelInboundHandler<GroupCreateRequestMessage> {
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, GroupCreateRequestMessage msg) throws Exception {

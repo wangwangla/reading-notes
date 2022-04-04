@@ -1,7 +1,7 @@
 package kw.test.chat.handler;
 
 import io.netty.channel.Channel;
-import kw.test.chat.message.Group;
+import kw.test.chat.session.Group;
 
 import java.util.List;
 import java.util.Set;

@@ -12,6 +12,13 @@ public class GroupMembersRequestMessage extends Message {
     }
 
     @Override
+    public String toString() {
+        return "GroupMembersRequestMessage{" +
+                "groupName='" + groupName + '\'' +
+                '}';
+    }
+
+    @Override
     public int getMessageType() {
         return 0;
     }

@@ -1,5 +1,6 @@
 package kw.test.chat.message;
 
+
 public class GroupChatRequestMessage extends Message {
 
     private String content;
@@ -27,5 +28,14 @@ public class GroupChatRequestMessage extends Message {
     @Override
     public int getMessageType() {
         return GroupChatResponseMessage;
+    }
+
+    @Override
+    public String toString() {
+        return "GroupChatRequestMessage{" +
+                "content='" + content + '\'' +
+                ", groupName='" + groupName + '\'' +
+                ", from='" + from + '\'' +
+                '}';
     }
 }

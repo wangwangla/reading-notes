@@ -14,4 +14,11 @@ public class GroupMembersResponseMessage extends Message {
     public int getMessageType() {
         return GroupMembersResponseMessage;
     }
+
+    @Override
+    public String toString() {
+        return "GroupMembersResponseMessage{" +
+                "members=" + members +
+                '}';
+    }
 }

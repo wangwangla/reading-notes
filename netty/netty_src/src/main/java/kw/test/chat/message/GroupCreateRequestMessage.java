@@ -31,4 +31,12 @@ public class GroupCreateRequestMessage extends Message {
     public int getMessageType() {
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "GroupCreateRequestMessage{" +
+                "groupName='" + groupName + '\'' +
+                ", members=" + members +
+                '}';
+    }
 }

@@ -13,6 +13,14 @@ public class ChatResponseMessage extends AbstractResponseMessage {
     }
     @Override
     public int getMessageType() {
-        return ChatRequestMessage;
+        return ChatResponseMessage;
+    }
+
+    @Override
+    public String toString() {
+        return "ChatResponseMessage{" +
+                "from='" + from + '\'' +
+                ", content='" + content + '\'' +
+                '}';
     }
 }

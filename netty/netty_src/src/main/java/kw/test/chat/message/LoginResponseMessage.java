@@ -10,4 +10,10 @@ public class LoginResponseMessage extends AbstractResponseMessage {
     public int getMessageType() {
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
+
