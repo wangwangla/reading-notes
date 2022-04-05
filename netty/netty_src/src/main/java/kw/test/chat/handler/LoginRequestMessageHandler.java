@@ -14,13 +14,12 @@ public class LoginRequestMessageHandler extends SimpleChannelInboundHandler<Logi
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, LoginRequestMessage msg) throws Exception {
-        System.out.println("------------------------------------");
         String username = msg.getUsername();
         String password = msg.getPassword();
         UserService userService = UserServiceFactory.getUserService();
         boolean login = userService.login(username, password);
         LoginResponseMessage message;
-        System.out.println(login+"000000000000000000");
+        System.out.println("--------- requestHandlwe"+login);
         if (login){
             SessionFactory.getSession().bind(ctx.channel(),username);
             message =new LoginResponseMessage(true,"成功！");

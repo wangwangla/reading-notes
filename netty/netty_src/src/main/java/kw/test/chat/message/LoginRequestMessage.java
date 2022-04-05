@@ -19,6 +19,14 @@ public class LoginRequestMessage extends Message {
         return password;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     @Override
     public int getMessageType() {
         return LoginRequestMessage;
