@@ -11,4 +11,5 @@ public class ProcotolFrameDecoder extends LengthFieldBasedFrameDecoder {
     public ProcotolFrameDecoder(int maxFrameLength, int lengthFieldOffset, int lengthFieldLength, int lengthAdjustment, int initialBytesToStrip) {
         super(maxFrameLength, lengthFieldOffset, lengthFieldLength, lengthAdjustment, initialBytesToStrip);
     }
+
 }

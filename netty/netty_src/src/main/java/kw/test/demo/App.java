@@ -66,6 +66,17 @@ public class App {
                 if (read < 0) {
                     n.close();
                     byte[] bytes = byteArrayOutputStream.toByteArray();
+                    ByteBuffer allocate = ByteBuffer.allocate(bytes.length);
+                    allocate.put(bytes);
+                    System.out.println("-----------------");
+                    allocate.flip();
+                    for (int i = 0; i < 83; i++) {
+                        System.out.println((char) allocate.get());
+                    }
+                    char aChar = allocate.getChar();
+                    System.out.println("----------------------");
+
+
 //                    m40259C(bytes);
 //                    ByteArrayInputStream inputStream = new ByteArrayInputStream(bytes);
 //                    for (int i = 0; i < 83; i++) {
@@ -77,17 +88,17 @@ public class App {
 //                        System.out.print(byte2int(ss)+" ");
 //                    }
 
-                    for (int i = 0; i < bytes.length; i++) {
-                        System.out.println(i+"  "+bytes[i]+"  "+(char)bytes[i]);
-                        if (i==300){
-                            System.out.println("----------------");
-                        }
-                    }
-
-                    C14012x6 c14012x6 = new C14012x6();
-                    c14012x6.mo70752i(bytes.length);
-                    c14012x6.mo70750g(bytes);
-                    m39531i(c14012x6,bytes);
+//                    for (int i = 0; i < bytes.length; i++) {
+//                        System.out.println(i+"  "+bytes[i]+"  "+(char)bytes[i]);
+//                        if (i==300){
+//                            System.out.println("----------------");
+//                        }
+//                    }
+//
+//                    C14012x6 c14012x6 = new C14012x6();
+//                    c14012x6.mo70752i(bytes.length);
+//                    c14012x6.mo70750g(bytes);
+//                    m39531i(c14012x6,bytes);
 //                    m40259C(bytes);
                     break;
                 }

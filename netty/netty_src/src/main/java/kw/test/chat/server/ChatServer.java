@@ -40,7 +40,8 @@ public class ChatServer {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
                             //解决粘包和半包问题
-                            ch.pipeline().addLast(new ProcotolFrameDecoder());
+
+//                            ch.pipeline().addLast(new ProcotolFrameDecoder());
                             ch.pipeline().addLast(LOGGING_HANDLER);
                             ch.pipeline().addLast(MESSAGE_CODEC);
                             ch.pipeline().addLast(LOGIN_HANDLER);
